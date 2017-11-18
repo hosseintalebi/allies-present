@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Balloons from './components/balloon/Balloons'
+import Sky from './components/sky/Sky'
 import './App.css';
 
 class App extends Component {
+  renderLoginPage () {
+    return (
+      <div style={{height: '100vh'}}>
+        <Balloons />
+        <Sky />
+        <div></div>
+      </div>
+    )
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      this.renderLoginPage()
     );
   }
 }
