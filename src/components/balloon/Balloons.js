@@ -33,7 +33,7 @@ export default function Balloons() {
       display: 'flex',
       flexDirection: 'row'
     }}>
-      {_.map(CLOUD_COLORS, (color) => <Balloon color={color}/>)}
+      {_.map(CLOUD_COLORS, (color, key) => <Balloon key={`ballon-${color}-${key}`} color={color}/>)}
     </div>
   )
 }

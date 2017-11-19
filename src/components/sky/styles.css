@@ -15,6 +15,7 @@
   height: 50px;
   border-radius: 50%;
   background: #fff;
+  z-index: 3;
 }
 
 .sky .c2 {
@@ -25,6 +26,7 @@
   top: -50px;
   left: 25px;
   background: #fff;
+  z-index: 3;
 }
 
 .sky .c3 {
@@ -35,6 +37,7 @@
   top: -25px;
   left: 100px;
   background: #fff;
+  z-index: 3;
 }
 
 .sky .c4 {
@@ -42,26 +45,27 @@
   height: 15px;
   background: #fff;
   position: absolute;
+  z-index: 3;
   left: 25px;
   top: 35px;
 }
 
 .sky .cloud1 {
-  margin-top: 100px;
-  position: relative;
-}
-
-.sky .cloud2 {
   margin-top: 300px;
   position: relative;
 }
 
+.sky .cloud2 {
+  margin-top: 100px;
+  position: relative;
+}
+
 .sky .cloud1 {
-  animation: slide 4s ease-out;
+  animation: slide 6s ease-out;
 }
 
 .sky .cloud2 {
-  animation: slide 6s ease-out;
+  animation: slide 4s ease-out;
 }
 
 @keyframes slide {

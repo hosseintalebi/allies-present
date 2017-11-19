@@ -9,8 +9,15 @@
     "react-dom": "^16.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.8.2",
+    "lint-staged": "^5.0.0",
+    "prettier": "1.8.2",
     "react-scripts": "1.0.17"
+  },
+  "lint-staged": {
+    "*.{js,json,css,ts}": [
+      "prettier --no-semi --single-quote --trailing-comm all --write",
+      "git add"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",

@@ -11,7 +11,7 @@ export default class Balloon extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({divClassName: 'float'})
-    }, _.random(1.0, 2.1) * 1000 )
+    }, _.random(1.8, 3.5) * 1000 )
   }
   render () {
     const { color } = this.props

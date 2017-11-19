@@ -5,20 +5,20 @@ import './styles.css'
 export default class Ground extends Component {
   render () {
     return (
-      <div class="giftBoxContainer">
-        <div class="box">
+      <div className="giftBoxContainer">
+        <div className="box">
 
-          <div class="box-top">
+          <div className="box-top">
             <ul>
-              <li class="first"></li>
-              <li class="middle"></li>
-              <li class="last"></li>
+              <li className="first"></li>
+              <li className="middle"></li>
+              <li className="last"></li>
             </ul>
-            <div class="lid"><span></span></div>
+            <div className="lid"><span></span></div>
           </div>
 
-          <div class="box-bottom">
-            <div class="base"><span></span></div>
+          <div className="box-bottom">
+            <div className="base"><span></span></div>
           </div>
         </div>
       </div>
