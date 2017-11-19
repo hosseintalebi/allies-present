@@ -1,5 +1,31 @@
 import React from 'react'
+import _ from 'lodash'
+
 import Balloon from './Balloon'
+
+const CLOUD_COLORS = [
+  'blue',
+  'orange',
+  'purple',
+  'green',
+  'yellow',
+  'green',
+  'blue',
+  'yellow',
+  'green',
+  'orange',
+  'green',
+  'blue',
+  'yellow',
+  'purple',
+  'orange',
+  'purple',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'green',
+]
 
 export default function Balloons() {
   return (
@@ -7,27 +33,7 @@ export default function Balloons() {
       display: 'flex',
       flexDirection: 'row'
     }}>
-      <Balloon color={'blue'}/>
-      <Balloon color={'orange'}/>
-      <Balloon color={'purple'}/>
-      <Balloon color={'green'}/>
-      <Balloon color={'yellow'}/>
-      <Balloon color={'green'}/>
-      <Balloon color={'blue'}/>
-      <Balloon color={'purple'}/>
-      <Balloon color={'green'}/>
-      <Balloon color={'orange'}/>
-      <Balloon color={'green'}/>
-      <Balloon color={'blue'}/>
-      <Balloon color={'yellow'}/>
-      <Balloon color={'purple'}/>
-      <Balloon color={'blue'}/>
-      <Balloon color={'purple'}/>
-      <Balloon color={'green'}/>
-      <Balloon color={'yellow'}/>
-      <Balloon color={'blue'}/>
-      <Balloon color={'purple'}/>
-      <Balloon color={'green'}/>
+      {_.map(CLOUD_COLORS, (color) => <Balloon color={color}/>)}
     </div>
   )
 }
