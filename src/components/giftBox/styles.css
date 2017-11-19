@@ -1,0 +1,127 @@
+div, ul , li{
+    display: block; position: relative;
+    margin: 0; padding: 0;
+}
+
+.giftBoxContainer{
+  position:absolute;
+  margin: auto;
+  width: 320px;
+  bottom: 0; left: 0; right: 0;
+  animation: gift 6s ease-out;
+}
+
+.giftBoxContainer .box{
+  margin: 0 auto;
+  width: 240px; height: 240px;
+  overflow: visible;
+}
+
+.giftBoxContainer .box-top {
+  position: absolute;
+  margin: 0 auto;
+  width: 130px; height: 50px;
+  z-index: 9;
+  top: 80px; bottom: 0; left: 0; right:0;
+  -webkit-transition: top 0.75s;
+}
+
+.giftBoxContainer .box:hover .box-top {
+  top: -25px;
+  -webkit-animation: topdisplay 3s;
+}
+
+.giftBoxContainer .box-top ul{
+  list-style:none;
+  height: 25px;
+  width: 100%;
+}
+
+.giftBoxContainer .box-top ul li{
+  background: transparent;
+  border: 5px solid #2E16A1;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.giftBoxContainer .box-top ul li.first, li.last{
+  left: 20%;
+  bottom: -10px;
+  height: 15px;
+  width: 15px;
+}
+
+.giftBoxContainer .box-top ul li.middle{
+  margin: 0 auto;
+  left:0; right: 0;
+  height: 25px; width: 25px;
+}
+
+.giftBoxContainer .box-top ul li.last{
+  left: 60%;
+}
+
+.giftBoxContainer .box-top .lid{
+  margin: 0 auto;
+  background: #3C81FF;
+  width: 100%; height: 25px;
+}
+
+.giftBoxContainer .box-top .lid span{
+  position: absolute;
+  margin: 0 auto;
+  left: 0; right: 0;
+  background: #3B1BCC;
+  width: 25%; height: 25px;
+}
+
+.giftBoxContainer .box-bottom {
+  position: absolute;
+  margin: 0 auto;
+  width: 130px; height: 320px;
+  top: auto; bottom: 0; left: 0; right:0;
+}
+
+.giftBoxContainer .box-bottom .base{
+  position: absolute;
+  background: #3777EB;
+  border-radius: 0 0 5% 5%;
+  margin: 0 auto;
+  width: 120px; height: 80px;
+  bottom: 30px; left: 0; right:0;
+  z-index: 4;
+}
+
+.giftBoxContainer .box-bottom .base span{
+  position: absolute;
+  margin: 0 auto;
+  left: 0; right: 0;
+  background: #2E16A1;
+  width: 25%; height: 100%;
+}
+
+/* SURPRISE!!!! :) */
+
+.giftBoxContainer .box:hover .box-top{
+  display:block;
+}
+
+.giftBoxContainer .box:hover .box-bottom .cat{
+  display:block;
+  bottom: 110px;
+  -webkit-transition: bottom 1s;
+}
+
+@-webkit-keyframes topdisplay {
+  from {top: 80px;}
+  to {top: -25px;}
+}
+
+@keyframes gift {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
