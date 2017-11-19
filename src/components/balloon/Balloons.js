@@ -8,19 +8,26 @@ export default function Balloons() {
       flexDirection: 'row'
     }}>
       <Balloon color={'blue'}/>
-      <Balloon color={'red'}/>
+      <Balloon color={'orange'}/>
       <Balloon color={'purple'}/>
       <Balloon color={'green'}/>
-      <Balloon color={'red'}/>
+      <Balloon color={'yellow'}/>
       <Balloon color={'green'}/>
       <Balloon color={'blue'}/>
       <Balloon color={'purple'}/>
       <Balloon color={'green'}/>
-      <Balloon color={'red'}/>
+      <Balloon color={'orange'}/>
       <Balloon color={'green'}/>
       <Balloon color={'blue'}/>
-      <Balloon color={'red'}/>
+      <Balloon color={'yellow'}/>
       <Balloon color={'purple'}/>
+      <Balloon color={'blue'}/>
+      <Balloon color={'purple'}/>
+      <Balloon color={'green'}/>
+      <Balloon color={'yellow'}/>
+      <Balloon color={'blue'}/>
+      <Balloon color={'purple'}/>
+      <Balloon color={'green'}/>
     </div>
   )
 }

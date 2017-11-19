@@ -6,63 +6,64 @@
 }
 
 .balloon div div:first-of-type {
-	border-radius: 60% 60% 55% 55%;
+	border-radius:80%;
 	width: 60px;
-	height: 80px;
+	height: 72px;
 	margin-top: 30px;
 	-webkit-transform: translate(0, 2000px) rotate(-50deg);
 	-webkit-transition: 15s cubic-bezier(.65, 2, .0, .32);
+  transform: translate(0, 2000px) rotate(-50deg);
+	transition: 15s cubic-bezier(.65, 2, .0, .32);
+  box-shadow: inset -10px -10px 0 rgba(0,0,0,0.07);
 	z-index: 4;
 	position: relative;
 }
+
+.balloon div div:before {
+  content:"▲";
+  font-size:12px;
+  color:hsl(215,30%,50%);
+  display:block;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  bottom:-12px;
+  z-index:-100;
+}
+
 .balloon div div.blue:first-of-type {
-  background: -webkit-radial-gradient(40% 20%, #acd9fc 5%, #0090ff 50%, #002f53 150%);
+  background: hsl(215,50%,65%);
+}
+.balloon div div.blue:before {
+  color:hsl(215,30%,50%);
 }
 
 .balloon div div.purple:first-of-type {
-  background: -webkit-radial-gradient(40% 20%, #fcabfc 5%, #f0f 50%, #520052 150%);
+  background: hsl(245,40%,65%);
+}
+.balloon div div.purple:before {
+  color:hsl(245,40%,65%);
 }
 
-.balloon div div.red:first-of-type {
-  background: -webkit-radial-gradient(40% 20%, #fcabab 5%, #f00 50%, #520000 150%);
+.balloon div div.yellow:first-of-type {
+  background: hsl(59,50%,58%);
+}
+.balloon div div.yellow:before {
+  color:hsl(59,30%,52%);
+}
+
+.balloon div div.orange:first-of-type {
+  background: hsl(23,55%,57%);
+}
+.balloon div div.orange:before {
+  color:hsl(23,44%,46%);
 }
 
 .balloon div div.green:first-of-type {
-  background: -webkit-radial-gradient(40% 20%, #c6fcab 5%, #5f0 50%, #1b5200 150%);
+  background: hsl(139,50%,60%);
 }
-
-.balloon div div:first-of-type:after {
-	display: block;
-	content: "";
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid #002f53;
-	position: absolute;
-	bottom: -9px;
-	right: 20px;
-}
-
-.balloon div div.blue:first-of-type:after {
-  border-bottom: 10px solid #002f53;
-}
-
-.balloon div div.purple:first-of-type:after {
-  border-bottom: 10px solid #520052;
-}
-
-.balloon div div.red:first-of-type:after {
-  border-bottom: 10px solid #520000;
-}
-
-.balloon div div.green:first-of-type:after {
-  border-bottom: 10px solid #1b5200;
-}
-
-.balloon div div.float:first-of-type + div {
-	-webkit-transform: translate(200, 476px) scale(3.5, 1);
-	opacity: 0;
+.balloon div div.green:before {
+  color:hsl(139,30%,50%);
 }
 
 .balloon div div.float:first-of-type {
