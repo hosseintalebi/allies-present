@@ -1,0 +1,14 @@
+.ground {
+  animation: slide 6s ease-out;
+  position: absolute;
+  bottom: -10px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
