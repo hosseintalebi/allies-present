@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component {
   renderLoginPage () {
     return (
-      <div style={{height: '100vh'}}>
+      <div style={{height: '100vh', overflow: 'hidden'}}>
         <Balloons />
         <Sky />
         <Ground />
