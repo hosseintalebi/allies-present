@@ -6,7 +6,9 @@
     "gh-pages": "^1.1.0",
     "lodash": "^4.17.4",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "react-emojione": "^5.0.0",
+    "react-typist": "^2.0.4"
   },
   "devDependencies": {
     "lint-staged": "^5.0.0",

@@ -10,6 +10,7 @@ export default class CloudCat extends Component {
           <span className="eyes left"></span>
           <span className="eyes right"></span>
           <span className="mouth"></span>
+          {this.props.children}
         </div>
       </div>
     )

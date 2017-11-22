@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import _ from 'lodash'
 
-import CloudCat from '../cats/cloudCat/CloudCat'
+
 
 import './styles.css'
 
@@ -14,7 +14,7 @@ export default class Sky extends Component {
           <div className="c2" />
           <div className="c3" />
           <div className="c4" />
-          <CloudCat />
+          {this.props.children}
         </div>
         <div className="cloud2">
           <div className="c1" />

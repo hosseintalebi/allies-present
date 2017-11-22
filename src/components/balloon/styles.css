@@ -15,7 +15,7 @@
   transform: translate(0, 2000px) rotate(-50deg);
 	transition: 15s cubic-bezier(.65, 2, .0, .32);
   box-shadow: inset -10px -10px 0 rgba(0,0,0,0.07);
-	z-index: 4;
+	z-index: 10;
 	position: relative;
 }
 

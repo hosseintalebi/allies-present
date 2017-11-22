@@ -6,6 +6,8 @@ import Balloons from './components/balloon/Balloons'
 import Sky from './components/sky/Sky'
 import Ground from './components/ground/Ground'
 import GiftBox from './components/giftBox/GiftBox'
+import CloudCat from './components/cats/cloudCat/CloudCat'
+import DialogBox from './components/dialogBox/DialogBox'
 
 import './App.css';
 
@@ -14,7 +16,15 @@ class App extends Component {
     return (
       <div style={{height: '100vh', overflow: 'hidden'}}>
         <Balloons />
-        <Sky />
+        <Sky>
+          <CloudCat>
+            <DialogBox
+            styles={{
+              left: -10,
+              bottom: 100,
+            }}/>
+          </CloudCat>
+        </Sky>
         <Ground />
         <GiftBox />
       </div>
