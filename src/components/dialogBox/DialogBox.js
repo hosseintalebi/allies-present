@@ -4,7 +4,7 @@ import Typist from 'react-typist';
 import {emojify} from 'react-emojione'
 import './styles.css'
 
-const INITIAL_DELAY = 6000
+const INITIAL_DELAY = 7500
 const DELAY_BETWEEN_P = 600
 const TIME_OF_FIRST_DIALOG = INITIAL_DELAY + 3 * 600
 
@@ -19,7 +19,7 @@ export default class DialogBox extends Component {
   }
   componentDidMount () {
     const { delayOffset = 0 } = this.props
-    setTimeout(() => this.setState({visible: true}), 5500)
+    setTimeout(() => this.setState({visible: true}), 7000)
   }
   setNextDialog () {
     this.setState({dialog: this.state.dialog + 1})
@@ -49,7 +49,7 @@ export default class DialogBox extends Component {
         </p>
         <Typist.Delay ms={DELAY_BETWEEN_P} />
         <p>
-        I helped Hossein To find the perfect present for you!
+        I helped Hossein to find the perfect present for you!
         </p>
         <Typist.Delay ms={2000} />
       </Typist>
