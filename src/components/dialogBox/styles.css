@@ -1,0 +1,29 @@
+.dialogBox {
+  height: 0;
+  width: 0;
+  padding: 10px !important;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  -webkit-transition: height 1s ease-in-out;
+  -moz-transition: height 1s ease-in-out;
+  -o-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+}
+.dialogBox.visible{
+  padding: 10px !important;
+  width: 162px;
+  height: 100px;
+  border: 2px solid rgb(68, 68, 68);
+  border-radius: 10px 10px 10px 0px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+.dialogBox p {
+  margin: 2px 5px;
+}
+.dialogBox div {
+  margin: 0;
+}
