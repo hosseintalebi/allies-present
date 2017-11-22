@@ -39,7 +39,7 @@ div, ul , li{
 
 .giftBoxContainer .box-top ul li{
   background: transparent;
-  border: 5px solid #2E16A1;
+  border: 5px solid #FFCD00;
   border-radius: 100%;
   position: absolute;
 }
@@ -71,7 +71,7 @@ div, ul , li{
   position: absolute;
   margin: 0 auto;
   left: 0; right: 0;
-  background: #3B1BCC;
+  background: #FFCD00;
   width: 25%; height: 25px;
 }
 
@@ -96,7 +96,7 @@ div, ul , li{
   position: absolute;
   margin: 0 auto;
   left: 0; right: 0;
-  background: #2E16A1;
+  background: #EEBE00;
   width: 25%; height: 100%;
 }
 

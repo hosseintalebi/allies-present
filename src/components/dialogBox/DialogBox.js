@@ -36,7 +36,7 @@ export default class DialogBox extends Component {
           <br />
           {emojify('🎈🎉')}
         </p>
-        <Typist.Delay ms={1500} />
+        <Typist.Delay ms={2500} />
       </Typist>
     )
   }
@@ -59,7 +59,7 @@ export default class DialogBox extends Component {
     return (
       <Typist cursor={{show: false}}>
         <p>
-          {"Why don't you go ahead and type the screte code to open your present?"}
+          {"Why don't you go ahead and type the secret code to open your present?"}
           {emojify('🎁')}
         </p>
         <p>
@@ -71,7 +71,6 @@ export default class DialogBox extends Component {
   render () {
     const { styles, delayOffset = 0 } = this.props
     const { visible, dialog } = this.state
-    console.log('>>>>>>>>>>>>>>' + dialog)
     return (
       <div style={styles} className={`dialogBox ${visible ? 'visible' : ''}`}>
       {dialog === 1 &&
