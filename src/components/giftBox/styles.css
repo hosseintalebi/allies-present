@@ -26,7 +26,7 @@ div, ul , li{
   -webkit-transition: top 0.75s;
 }
 
-.giftBoxContainer .box:hover .box-top {
+.giftBoxContainer .box.open .box-top {
   top: -25px;
   -webkit-animation: topdisplay 3s;
 }
@@ -102,11 +102,11 @@ div, ul , li{
 
 /* SURPRISE!!!! :) */
 
-.giftBoxContainer .box:hover .box-top{
+.giftBoxContainer .box.open .box-top{
   display:block;
 }
 
-.giftBoxContainer .box:hover .box-bottom .cat{
+.giftBoxContainer .box.open .box-bottom .cat{
   display:block;
   bottom: 110px;
   -webkit-transition: bottom 1s;

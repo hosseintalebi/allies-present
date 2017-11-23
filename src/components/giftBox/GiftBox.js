@@ -4,9 +4,10 @@ import './styles.css'
 
 export default class Ground extends Component {
   render () {
+    const { openPresent } = this.props
     return (
       <div className="giftBoxContainer">
-        <div className="box">
+        <div className={`box${ openPresent ? ' open' : ''}`}>
 
           <div className="box-top">
             <ul>

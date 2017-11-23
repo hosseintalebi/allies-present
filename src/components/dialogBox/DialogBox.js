@@ -4,7 +4,7 @@ import Typist from 'react-typist';
 import {emojify} from 'react-emojione'
 import './styles.css'
 
-const INITIAL_DELAY = 7500
+const INITIAL_DELAY = 9500
 const DELAY_BETWEEN_P = 600
 const TIME_OF_FIRST_DIALOG = INITIAL_DELAY + 3 * 600
 
@@ -19,7 +19,7 @@ export default class DialogBox extends Component {
   }
   componentDidMount () {
     const { delayOffset = 0 } = this.props
-    setTimeout(() => this.setState({visible: true}), 7000)
+    setTimeout(() => this.setState({visible: true}), 8500)
   }
   setNextDialog () {
     this.setState({dialog: this.state.dialog + 1})
@@ -57,15 +57,26 @@ export default class DialogBox extends Component {
   }
   renderThirdDialog () {
     return (
-      <Typist cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>
           {"Why don't you go ahead and type the secret code to open your present?"}
           {emojify('🎁')}
         </p>
-        <p>
-          {" "}
-        </p>
+        <Typist.Delay ms={800} />
       </Typist>
+    )
+  }
+  renderFourthDialog () {
+    const { onChangeSecretCode, secretCodeInput } = this.props
+    return (
+      <div id="secretCode">
+        <p>Your Secret Code:</p>
+        <input
+          type="password"
+          value={secretCodeInput}
+          onChange={onChangeSecretCode}
+        />
+      </div>
     )
   }
   render () {
@@ -81,6 +92,9 @@ export default class DialogBox extends Component {
       }
       {dialog === 3 &&
         this.renderThirdDialog()
+      }
+      {dialog === 4 &&
+        this.renderFourthDialog()
       }
       </div>
     )
