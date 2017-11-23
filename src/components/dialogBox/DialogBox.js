@@ -30,11 +30,9 @@ export default class DialogBox extends Component {
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
         <p style={{textAlign: 'center'}}>
-          {emojify('🎉🎈')}
           <br />
-          <p style={{margin: 0, marginTop: 5, fontWeight: 400}}>Happy Birthday Allie!</p>
+          <p style={{margin: 0, marginTop: 15, fontWeight: 400}}>Happy Birthday Allie!</p>
           <br />
-          {emojify('🎈🎉')}
         </p>
         <Typist.Delay ms={2500} />
       </Typist>
@@ -45,7 +43,6 @@ export default class DialogBox extends Component {
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>
           {"I'm the Wise Cat!"}
-          {emojify('😸 ')}
         </p>
         <Typist.Delay ms={DELAY_BETWEEN_P} />
         <p>
@@ -60,14 +57,13 @@ export default class DialogBox extends Component {
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>
           {"Why don't you go ahead and type the secret code to open your present?"}
-          {emojify('🎁')}
         </p>
-        <Typist.Delay ms={800} />
+        <Typist.Delay ms={1200} />
       </Typist>
     )
   }
   renderFourthDialog () {
-    const { onChangeSecretCode, secretCodeInput } = this.props
+    const { onChangeSecretCode, secretCodeInput, openPresent, wrongSecret } = this.props
     return (
       <div id="secretCode">
         <p>Your Secret Code:</p>
@@ -76,6 +72,10 @@ export default class DialogBox extends Component {
           value={secretCodeInput}
           onChange={onChangeSecretCode}
         />
+        <span onClick={openPresent}>Open</span>
+        {wrongSecret ?
+        <p>Sorry, wrong Secret!</p>
+      : <p>{' '}</p>}
       </div>
     )
   }

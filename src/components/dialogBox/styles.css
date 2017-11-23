@@ -32,12 +32,25 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   justify-content: center;
-  margin-top: -20px;
-  margin-left: 5px;
+  margin-top: -10px;
+  margin-left: -10px;
   align-items: center;
 }
 
 #secretCode p {
-  margin: 10px 5px;
+  margin: 5px;
+}
+
+#secretCode span {
+  margin-top: 10px;
+  background: orange;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#secretCode span:hover {
+  background: green;
 }

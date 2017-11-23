@@ -19,17 +19,28 @@ class App extends Component {
     this.state = {
       secretCodeInput: '',
       openPresent: false,
+      wrongSecret: false,
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
+    this.openPresent = this.openPresent.bind(this)
   }
   onChangeSecretCode ({target}) {
-    this.setState({secretCodeInput: target.value})
-    if (_.toLower(target.value) === SECRET_CODE) {
-      this.setState({openPresent: true})
+    this.setState({
+      secretCodeInput: target.value,
+      wrongSecret: false,
+      openPresent: false,
+    })
+  }
+  openPresent () {
+    const { secretCodeInput } = this.state
+    if (_.toLower(secretCodeInput) === SECRET_CODE) {
+      this.setState({openPresent: true, wrongSecret: false})
+    } else {
+      this.setState({wrongSecret: true})
     }
   }
   renderLoginPage () {
-    const { secretCodeInput, openPresent } = this.state
+    const { secretCodeInput, openPresent, wrongSecret } = this.state
     return (
       <div style={{height: '100vh', overflow: 'hidden'}}>
         <Balloons />
@@ -41,7 +52,9 @@ class App extends Component {
                 bottom: 100,
               }}
               onChangeSecretCode={this.onChangeSecretCode}
+              openPresent={this.openPresent}
               secretCodeInput={secretCodeInput}
+              wrongSecret={wrongSecret}
             />
           </CloudCat>
         </Sky>
