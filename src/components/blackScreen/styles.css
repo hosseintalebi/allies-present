@@ -1,0 +1,16 @@
+.blackScreen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(16,16,16,0);
+  top: 0;
+  -webkit-transition: background 2s ease-in-out;
+  -moz-transition: background 2s ease-in-out;
+  -o-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out;
+}
+
+.blackScreen.visible {
+  background: #161616;
+  z-index: 10;
+}
