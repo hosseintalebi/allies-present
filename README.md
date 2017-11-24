@@ -10,6 +10,8 @@ Component in this repo are taken from the followings:
 
 [Pure CSS Clouds animation](https://codepen.io/iamrohan/pen/ezzaMq)
 
+[Pure CSS cat animation](https://codepen.io/johanmouchet/pen/OXxvqr)
+
 [CSS - Cat in the sky](https://codepen.io/AngelaVelasquez/pen/eEzdy)
 
 [CSS - Cat surprise!](https://codepen.io/anon/pen/QOazya)

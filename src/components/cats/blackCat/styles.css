@@ -1,8 +1,10 @@
 .blackCatCtontainer .cat {
   position: relative;
-  height: 190px;
-  width: 214.7px;
-  margin-bottom: 100px;
+  height: 44.24vw;
+  max-height: 190px;
+  width: 50vw;
+  max-width: 214.7px;
+  margin-bottom: 50px;
 }
 
 .blackCatCtontainer .ear {
