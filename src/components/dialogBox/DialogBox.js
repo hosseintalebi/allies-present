@@ -84,18 +84,18 @@ export default class DialogBox extends Component {
     const { visible, dialog } = this.state
     return (
       <div style={styles} className={`dialogBox ${visible ? 'visible' : ''}`}>
-      {dialog === 1 &&
-        this.renderFirtDialog()
-      }
-      {dialog === 2 &&
-        this.renderSecondDialog()
-      }
-      {dialog === 3 &&
-        this.renderThirdDialog()
-      }
-      {dialog === 4 &&
-        this.renderFourthDialog()
-      }
+        {dialog === 1 &&
+          this.renderFirtDialog()
+        }
+        {dialog === 2 &&
+          this.renderSecondDialog()
+        }
+        {dialog === 3 &&
+          this.renderThirdDialog()
+        }
+        {dialog === 4 &&
+          this.renderFourthDialog()
+        }
       </div>
     )
   }

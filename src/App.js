@@ -8,6 +8,8 @@ import Ground from './components/ground/Ground'
 import GiftBox from './components/giftBox/GiftBox'
 import CloudCat from './components/cats/cloudCat/CloudCat'
 import DialogBox from './components/dialogBox/DialogBox'
+import BlackScreen from './components/blackScreen/BlackScreen'
+import BlackCat from './components/cats/blackCat/BlackCat'
 
 import './App.css';
 
@@ -60,6 +62,9 @@ class App extends Component {
         </Sky>
         <Ground />
         <GiftBox openPresent={openPresent}/>
+        <BlackScreen visible={openPresent}>
+          <BlackCat />
+        </BlackScreen>
       </div>
     )
   }

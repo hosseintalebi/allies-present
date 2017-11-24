@@ -15,9 +15,9 @@
   padding: 10px !important;
   width: 162px;
   height: 100px;
-  border: 2px solid hsl(238,55%,68%);
+  border: 2px solid #48929B;
   border-radius: 10px 10px 10px 0px;
-  background: hsl(238,55%,68%);
+  background: #48929B;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
 }
@@ -45,12 +45,12 @@
 
 #secretCode span {
   margin-top: 10px;
-  background: orange;
+  background: #FAA945;
   padding: 6px 12px;
   border-radius: 3px;
   cursor: pointer;
 }
 
 #secretCode span:hover {
-  background: green;
+  background: #F4D03F;
 }
