@@ -41,11 +41,11 @@ export default class DialogBoxFirst extends Component {
     return(
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>
-          {"I'm the Wise Cat!"}
+          I'm the Wise Cat!
         </p>
         <Typist.Delay ms={DELAY_BETWEEN_P} />
         <p>
-        I helped Hossein to find the perfect present for you!
+          I helped Hossein to find the perfect present for you!
         </p>
         <Typist.Delay ms={2000} />
       </Typist>

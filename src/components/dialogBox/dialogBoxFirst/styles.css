@@ -10,6 +10,7 @@
   -moz-transition: height 1s ease-in-out;
   -o-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
+  text-align: left;
 }
 .dialogBox.visible{
   padding: 10px !important;

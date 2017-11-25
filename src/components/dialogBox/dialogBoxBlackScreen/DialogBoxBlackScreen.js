@@ -81,7 +81,7 @@ export default class DialogBoxBlackScreen extends Component {
   renderFifthDialog () {
     return (
       <div>
-        <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+        <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
           <Typist.Delay ms={1000} />
           <p style={{textAlign: 'center', fontSize: '4em'}}>FOOD</p>
           <Typist.Delay ms={1000} />
@@ -100,7 +100,7 @@ export default class DialogBoxBlackScreen extends Component {
         <Typist.Delay ms={500} />
         <p>He found 10 new recipes for you!</p>
         <Typist.Delay ms={500} />
-        <p>You can choose 5 of those and he'll cook those for you in 5 weekends!</p>
+        <p>You can choose 5 of those and he'll cook them for you in 5 weekends!</p>
         <Typist.Delay ms={1500} />
       </Typist>
     )
