@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import _ from 'lodash'
 // components
+import InitialScreen from './components/initialScreen/InitialScreen'
 import Balloons from './components/balloon/Balloons'
 import Sky from './components/sky/Sky'
 import Ground from './components/ground/Ground'
@@ -22,9 +23,15 @@ class App extends Component {
       secretCodeInput: '',
       openPresent: false,
       wrongSecret: false,
+      showContent: false,
+      initialScreenOff: false,
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
     this.openPresent = this.openPresent.bind(this)
+  }
+  componentDidMount () {
+    setTimeout(() => this.setState({initialScreenOff: true}), 5000)
+    setTimeout(() => this.setState({showContent: true}), 7000)
   }
   onChangeSecretCode ({target}) {
     this.setState({
@@ -42,30 +49,38 @@ class App extends Component {
     }
   }
   renderLoginPage () {
-    const { secretCodeInput, openPresent, wrongSecret } = this.state
+    const { secretCodeInput, openPresent, wrongSecret, initialScreenOff, showContent } = this.state
     return (
-      <div style={{height: '100vh', overflow: 'hidden'}}>
-        <Balloons />
-        <Sky>
-          <CloudCat>
-            <DialogBoxFirst
-              styles={{
-                left: -10,
-                bottom: 100,
-              }}
-              onChangeSecretCode={this.onChangeSecretCode}
-              openPresent={this.openPresent}
-              secretCodeInput={secretCodeInput}
-              wrongSecret={wrongSecret}
-            />
-          </CloudCat>
-        </Sky>
-        <Ground />
-        <GiftBox openPresent={openPresent}/>
-        <BlackScreen visible={openPresent}>
-          <BlackCat />
-          <DialogBoxBlackScreen visible={openPresent}/>
-        </BlackScreen>
+      <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
+        <InitialScreen />
+        <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>
+          {showContent &&
+            <div className={'container'}>
+              <Balloons />
+              <Sky>
+                <CloudCat>
+                  <DialogBoxFirst
+                    styles={{
+                      left: -10,
+                      bottom: 100,
+                    }}
+                    onChangeSecretCode={this.onChangeSecretCode}
+                    openPresent={this.openPresent}
+                    secretCodeInput={secretCodeInput}
+                    wrongSecret={wrongSecret}
+                  />
+                </CloudCat>
+              </Sky>
+              <Ground />
+              <GiftBox openPresent={openPresent}/>
+              <BlackScreen visible={openPresent}>
+                <BlackCat />
+                <DialogBoxBlackScreen visible={openPresent}/>
+              </BlackScreen>
+            </div>
+          }
+        </div>
+
       </div>
     )
   }
