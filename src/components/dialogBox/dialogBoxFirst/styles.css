@@ -40,6 +40,10 @@
   align-items: center;
 }
 
+#secretCode input {
+  margin: 0 5px;
+}
+
 #secretCode p {
   margin: 5px;
 }
