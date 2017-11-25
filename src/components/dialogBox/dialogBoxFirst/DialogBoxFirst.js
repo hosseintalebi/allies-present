@@ -28,9 +28,9 @@ export default class DialogBoxFirst extends Component {
     return (
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
-        <p style={{textAlign: 'center'}}>
+        <p style={{textAlign: 'center', width: '100%'}}>
           <br />
-          <span style={{margin: 0, marginTop: 15, fontWeight: 400}}>Happy Birthday Allie!</span>
+          <span style={{margin: 0, marginTop: 15, fontWeight: 400, display: 'inline-block'}}>Happy Birthday Allie!</span>
           <br />
         </p>
         <Typist.Delay ms={2500} />
