@@ -7,10 +7,10 @@ import Sky from './components/sky/Sky'
 import Ground from './components/ground/Ground'
 import GiftBox from './components/giftBox/GiftBox'
 import CloudCat from './components/cats/cloudCat/CloudCat'
-import DialogBox from './components/dialogBox/DialogBox'
+import DialogBoxFirst from './components/dialogBox/dialogBoxFirst/DialogBoxFirst'
 import BlackScreen from './components/blackScreen/BlackScreen'
 import BlackCat from './components/cats/blackCat/BlackCat'
-
+import DialogBoxBlackScreen from './components/dialogBox/dialogBoxBlackScreen/DialogBoxBlackScreen'
 import './App.css';
 
 const SECRET_CODE = 'hbd2017'
@@ -48,7 +48,7 @@ class App extends Component {
         <Balloons />
         <Sky>
           <CloudCat>
-            <DialogBox
+            <DialogBoxFirst
               styles={{
                 left: -10,
                 bottom: 100,
@@ -64,6 +64,7 @@ class App extends Component {
         <GiftBox openPresent={openPresent}/>
         <BlackScreen visible={openPresent}>
           <BlackCat />
+          <DialogBoxBlackScreen visible={openPresent}/>
         </BlackScreen>
       </div>
     )
