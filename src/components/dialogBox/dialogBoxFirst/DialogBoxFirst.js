@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
-import Typist from 'react-typist';
-import {emojify} from 'react-emojione'
+import Typist from 'react-typist'
 import './styles.css'
 
 const INITIAL_DELAY = 9500
 const DELAY_BETWEEN_P = 600
 const TIME_OF_FIRST_DIALOG = INITIAL_DELAY + 3 * 600
 
-export default class DialogBox extends Component {
+export default class DialogBoxFirst extends Component {
   constructor () {
     super()
     this.state = {
@@ -31,7 +30,7 @@ export default class DialogBox extends Component {
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
         <p style={{textAlign: 'center'}}>
           <br />
-          <p style={{margin: 0, marginTop: 15, fontWeight: 400}}>Happy Birthday Allie!</p>
+          <span style={{margin: 0, marginTop: 15, fontWeight: 400}}>Happy Birthday Allie!</span>
           <br />
         </p>
         <Typist.Delay ms={2500} />
