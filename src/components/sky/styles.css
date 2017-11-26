@@ -51,9 +51,10 @@
 }
 
 .sky .cloud1 {
-  margin-top: 300px;
+  margin-top: 280px;
   position: relative;
   z-index: 4;
+  margin-right: 10px;
 }
 
 .sky .cloud2 {

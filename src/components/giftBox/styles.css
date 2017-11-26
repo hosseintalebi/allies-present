@@ -39,7 +39,7 @@ div, ul , li{
 
 .giftBoxContainer .box-top ul li{
   background: transparent;
-  border: 5px solid #FFB94E;
+  border: 5px solid #FFBA4D;
   border-radius: 100%;
   position: absolute;
 }
@@ -63,7 +63,7 @@ div, ul , li{
 
 .giftBoxContainer .box-top .lid{
   margin: 0 auto;
-  background: #229CDB;
+  background: #488DF2;
   width: 100%; height: 25px;
 }
 
@@ -71,7 +71,7 @@ div, ul , li{
   position: absolute;
   margin: 0 auto;
   left: 0; right: 0;
-  background: #E29C45;
+  background: #FFA413;
   width: 25%; height: 25px;
 }
 
@@ -84,7 +84,7 @@ div, ul , li{
 
 .giftBoxContainer .box-bottom .base{
   position: absolute;
-  background: #1F91CC;
+  background: #4282DF;
   border-radius: 0 0 5% 5%;
   margin: 0 auto;
   width: 120px; height: 80px;
@@ -96,7 +96,7 @@ div, ul , li{
   position: absolute;
   margin: 0 auto;
   left: 0; right: 0;
-  background: #E08A1E;
+  background: #f39c12;
   width: 25%; height: 100%;
 }
 

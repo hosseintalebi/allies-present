@@ -28,9 +28,9 @@ export default class DialogBoxBlackScreen extends Component {
     return (
       <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
-        <p>You may wonder where we are now and who I am!</p>
+        <p>You may wonder where we are and who I am!</p>
         <Typist.Delay ms={500} />
-        <p>We're inside the gift box and I'm the wise cat!</p>
+        <p>We're inside the gift box and I'm the Wise Cat!</p>
         <Typist.Delay ms={500} />
         <p>Apart from being wise, I'm able to deform to different cat shapes.</p>
         <Typist.Delay ms={1500} />
