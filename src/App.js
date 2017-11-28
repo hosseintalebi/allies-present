@@ -12,6 +12,7 @@ import DialogBoxFirst from './components/dialogBox/dialogBoxFirst/DialogBoxFirst
 import BlackScreen from './components/blackScreen/BlackScreen'
 import BlackCat from './components/cats/blackCat/BlackCat'
 import DialogBoxBlackScreen from './components/dialogBox/dialogBoxBlackScreen/DialogBoxBlackScreen'
+import Recipes from './components/recipes/Recipes'
 import './App.css';
 
 const SECRET_CODE = 'hbd2017'
@@ -25,9 +26,11 @@ class App extends Component {
       wrongSecret: false,
       showContent: false,
       initialScreenOff: false,
+      showRecipes: false,
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
     this.openPresent = this.openPresent.bind(this)
+    this.onShowRecipes = this.onShowRecipes.bind(this)
   }
   componentDidMount () {
     setTimeout(() => this.setState({initialScreenOff: true}), 5000)
@@ -40,6 +43,9 @@ class App extends Component {
       openPresent: false,
     })
   }
+  onShowRecipes() {
+    this.setState({showRecipes: true})
+  }
   openPresent () {
     const { secretCodeInput } = this.state
     if (_.toLower(secretCodeInput) === SECRET_CODE) {
@@ -49,7 +55,14 @@ class App extends Component {
     }
   }
   renderLoginPage () {
-    const { secretCodeInput, openPresent, wrongSecret, initialScreenOff, showContent } = this.state
+    const {
+      secretCodeInput,
+      openPresent,
+      wrongSecret,
+      initialScreenOff,
+      showContent,
+      showRecipes,
+    } = this.state
     return (
       <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
         <InitialScreen />
@@ -75,12 +88,12 @@ class App extends Component {
               <GiftBox openPresent={openPresent}/>
               <BlackScreen visible={openPresent}>
                 <BlackCat />
-                <DialogBoxBlackScreen visible={openPresent}/>
+                <DialogBoxBlackScreen visible={openPresent} onShowRecipes={this.onShowRecipes}/>
               </BlackScreen>
+              <Recipes visible={showRecipes} />
             </div>
           }
         </div>
-
       </div>
     )
   }
