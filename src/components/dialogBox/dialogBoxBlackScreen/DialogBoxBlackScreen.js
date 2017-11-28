@@ -12,9 +12,11 @@ export default class DialogBoxBlackScreen extends Component {
     super()
     this.state = {
       visible: false,
-      dialog: 1
+      dialog: 1,
+      showRecipesBtn: false,
     }
     this.setNextDialog = this.setNextDialog.bind(this)
+    this.showRecipesBtn = this.showRecipesBtn.bind(this)
   }
   componentDidMount () {
     const { delayOffset = 0 } = this.props
@@ -23,10 +25,13 @@ export default class DialogBoxBlackScreen extends Component {
   setNextDialog () {
     this.setState({dialog: this.state.dialog + 1})
   }
+  showRecipesBtn () {
+    this.setState({showRecipesBtn: true})
+  }
   renderFirtDialog () {
     const { delayOffset = 0 } = this.props
     return (
-      <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
         <p>You may wonder where we are and who I am!</p>
         <Typist.Delay ms={500} />
@@ -39,7 +44,7 @@ export default class DialogBoxBlackScreen extends Component {
   }
   renderSecondDialog () {
     return(
-      <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>Ok... enough about me! Let's get to your present.</p>
         <Typist.Delay ms={500} />
         <p>Considering that I'm inside your gift box, you may think that I'm your present!</p>
@@ -51,7 +56,7 @@ export default class DialogBoxBlackScreen extends Component {
   }
   renderThirdDialog () {
     return (
-      <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>Hossein came to me for ideas about a perfect gift for you.</p>
         <Typist.Delay ms={500} />
         <p>I told him it's simple. The perfect gift for Allie is what she loves...</p>
@@ -63,7 +68,7 @@ export default class DialogBoxBlackScreen extends Component {
   }
   renderFourthDialog () {
     return (
-      <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>You know what I'm talking about, right?</p>
         <Typist.Delay ms={500} />
         <p style={{textAlign: 'center'}}>Yeah! Your gift is:</p>
@@ -94,7 +99,7 @@ export default class DialogBoxBlackScreen extends Component {
   }
   renderSixthDialog () {
     return (
-      <Typist avgTypingDelay={85} onTypingDone={this.setNextDialog} cursor={{show: false}}>
+      <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <Typist.Delay ms={1000} />
         <p>Now let me explain how it works.</p>
         <Typist.Delay ms={500} />
@@ -107,16 +112,21 @@ export default class DialogBoxBlackScreen extends Component {
   }
 
   renderSeventhDialog () {
+    const { onShowRecipes } = this.props
+    const { showRecipesBtn } = this.state
     return (
-      <Typist avgTypingDelay={85} cursor={{show: false}}>
+      <div>
+      <Typist onTypingDone={this.showRecipesBtn} cursor={{show: false}}>
         <Typist.Delay ms={1000} />
         <p>So let's see the recipes he chose for you.</p>
         <Typist.Delay ms={500} />
         <p >Click on the button to unveil them:</p>
         <Typist.Delay ms={500} />
-        <span style={{textAlign: 'center'}}>Recipes</span>
-        <Typist.Delay ms={1500} />
       </Typist>
+      <div className={`recipesBtn${showRecipesBtn ? ' visible' : ''}`}>
+        <span style={{textAlign: 'center'}} onClick={onShowRecipes}>Recipes</span>
+      </div>
+      </div>
     )
   }
 
@@ -126,7 +136,7 @@ export default class DialogBoxBlackScreen extends Component {
     return (
       <div style={styles} className={'dialogBoxBlackScreenContainer'}>
       <div className={'dialogBoxBlackScreen'}>
-          {dialog === 1 &&
+          { dialog === 1 &&
             this.renderFirtDialog()
           }
           {dialog === 2 &&

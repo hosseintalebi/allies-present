@@ -38,10 +38,29 @@
   font-weight: 300;
 }
 .dialogBox p {
-  margin: 2px 5px;
+  margin: 1px 5px;
 }
 .dialogBox div {
   margin: 0;
+}
+
+.recipesBtn {
+  transition:opacity 1.5s ease-in-out;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.recipesBtn.visible {
+  opacity: 1;
+}
+
+.recipesBtn span {
+  padding: 10px;
+  border: 1px white solid;
+  cursor: pointer;
 }
 
 #secretCode {
