@@ -1,0 +1,47 @@
+.recipes {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  transition:top 1.5s ease-in-out;
+  background: white;
+  top: 100%;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recipes.visible {
+  top: 0;
+}
+
+.recipe {
+  max-width: 500px;
+}
+.recipe .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 300px;
+}
+.recipe .image img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.recipe .container {
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 30%);
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+.recipe .container div {
+  margin: 5px 10px;
+}
