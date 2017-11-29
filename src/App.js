@@ -22,10 +22,10 @@ class App extends Component {
     super()
     this.state = {
       secretCodeInput: '',
-      openPresent: false,
+      openPresent: true, //false,
       wrongSecret: false,
-      showContent: false,
-      initialScreenOff: false,
+      showContent: true, //false,
+      initialScreenOff: true, //false,
       showRecipes: false,
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
@@ -68,7 +68,7 @@ class App extends Component {
         <InitialScreen />
         <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>
           {showContent &&
-            <div className={'container'}>
+            <div className={'appContainer'}>
               <Balloons />
               <Sky>
                 <CloudCat>

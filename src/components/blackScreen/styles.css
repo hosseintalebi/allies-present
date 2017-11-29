@@ -1,6 +1,7 @@
 .blackScreen {
   display: flex;
   justify-content: center;
+  flex-direction: column-reverse;
   width: 100vw;
   height: 100vh;
   position: absolute;

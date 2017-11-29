@@ -10,7 +10,7 @@
 
 .dialogBoxBlackScreen {
   text-align: left;
-  width: 300px;
+  max-width: 300px;
   font-size: 1.2em;
 }
 
