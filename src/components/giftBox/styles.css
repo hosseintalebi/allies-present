@@ -8,8 +8,7 @@ div, ul , li{
   margin: auto;
   width: 320px;
   bottom: 0; left: 0; right: 0;
-  -webkit-animation: gift 6s ease-out;
-          animation: gift 6s ease-out;
+  animation: gift 6s ease-out;
 }
 
 .giftBoxContainer .box{
@@ -118,24 +117,11 @@ div, ul , li{
   to {top: -25px;}
 }
 
-@-webkit-keyframes gift {
-  from {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-  }
-  to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
 @keyframes gift {
   from {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
+    transform: translateY(1000px);
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
