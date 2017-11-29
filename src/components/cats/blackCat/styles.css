@@ -25,35 +25,40 @@
 }
 .blackCatCtontainer .ear::after {
   -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
+          -ms-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
 }
 
 .blackCatCtontainer .ear--left {
   left: -7%;
   border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
   -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+      transform: rotate(-15deg);
 }
 .blackCatCtontainer .ear--left::before, .blackCatCtontainer .ear--left::after {
   right: 10%;
 }
 .blackCatCtontainer .ear--left::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 .blackCatCtontainer .ear--right {
   right: -7%;
   border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
   -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+          -ms-transform: rotate(15deg);
+      transform: rotate(15deg);
 }
 .blackCatCtontainer .ear--right::before, .blackCatCtontainer .ear--right::after {
   left: 10%;
 }
 .blackCatCtontainer .ear--right::after {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .blackCatCtontainer .face {
@@ -243,7 +248,8 @@
   width: 10%;
   background: #fff;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
 
@@ -251,6 +257,8 @@
 .blackCatCtontainer {
   height: 100%;
   opacity:0;
+  -webkit-transition:opacity 4s ease-in-out;
+  -o-transition:opacity 4s ease-in-out;
   transition:opacity 4s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;

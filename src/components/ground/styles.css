@@ -1,14 +1,28 @@
 .ground {
-  animation: slide 6s ease-out;
+  -webkit-animation: slide 6s ease-out;
+          animation: slide 6s ease-out;
   position: absolute;
   bottom: -10px;
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   from {
-    transform: translateY(1000px);
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
   }
   to {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }

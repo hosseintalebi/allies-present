@@ -4,10 +4,17 @@
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a27bcc), color-stop(100%, #6c5299));
   background: -webkit-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
   background: -webkit-radial-gradient(center ellipse, #a27bcc 0%, #6c5299 100%);
+  background: -webkit-radial-gradient(center, ellipse, #a27bcc 0%, #6c5299 100%);
+  background: -o-radial-gradient(center, ellipse, #a27bcc 0%, #6c5299 100%);
   background: radial-gradient(ellipse at center, #a27bcc 0%, #6c5299 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a27bcc', endColorstr='#6c5299', GradientType=1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 /* ============================================== POSITION
 */
@@ -65,7 +72,8 @@
 */
 .initialScreen .fuego {
   border-radius: 100%;
-  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+          box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
   position: absolute;
   top: -12px;
   left: 50%;
@@ -215,6 +223,8 @@
 .initialScreen .skipInto {
   margin-top: 70px;
   z-index: 14;
+  -webkit-transition: bottom 1s ease-in-out, right 1s ease-in-out;
+  -o-transition: bottom 1s ease-in-out, right 1s ease-in-out;
   transition: bottom 1s ease-in-out, right 1s ease-in-out;
   bottom: 50px;
   right: calc(50% - 50px);

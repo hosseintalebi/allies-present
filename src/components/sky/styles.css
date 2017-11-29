@@ -1,7 +1,13 @@
 .sky {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:row;
-  justify-content: space-around;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,18 +69,33 @@
 }
 
 .sky .cloud1 {
-  animation: slide 6s ease-out;
+  -webkit-animation: slide 6s ease-out;
+          animation: slide 6s ease-out;
 }
 
 .sky .cloud2 {
-  animation: slide 4s ease-out;
+  -webkit-animation: slide 4s ease-out;
+          animation: slide 4s ease-out;
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 @keyframes slide {
   from {
-    transform: translateY(1000px);
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
   }
   to {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
