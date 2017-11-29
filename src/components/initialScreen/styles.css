@@ -209,3 +209,21 @@
   font-size: 0.8em;
   line-height: 2em;
 }
+
+.initialScreen .skipInto {
+  margin-top: 70px;
+}
+
+.initialScreen .skipInto span {
+  margin: 10px;
+  padding: 10px;
+  padding-top: 6px;
+  background: #EFEFEF;
+  color: #6c5299;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.initialScreen .skipInto span:hover {
+  background: #C7C7C7;
+}

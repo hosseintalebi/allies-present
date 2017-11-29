@@ -61,7 +61,7 @@ export default class DialogBoxBlackScreen extends Component {
         <Typist.Delay ms={500} />
         <p>I told him it's simple. The perfect gift for Allie is what she loves...</p>
         <Typist.Delay ms={500} />
-        <p>I told him there's something that she loves even more than you... if you give her that, she'll be happy!</p>
+        <p>if you give her that, she'll be happy!</p>
         <Typist.Delay ms={1500} />
       </Typist>
     )

@@ -5,7 +5,7 @@ import './styles.css'
 
 export default class Ground extends Component {
   render () {
-    const { openPresent } = this.props
+    const { openPresent, onSkipInto } = this.props
     return (
       <div className="initialScreen">
         <div className="cake">
@@ -21,6 +21,11 @@ export default class Ground extends Component {
           <h1>happy birthday!</h1>
           <p>Allie</p>
           <BarLoader color={'#6c5299'}/>
+          <div className='skipInto'>
+            <span onClick={onSkipInto}>
+              Skip intro
+            </span>
+          </div>
         </div>
       </div>
     )

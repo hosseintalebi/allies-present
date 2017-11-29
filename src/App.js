@@ -22,15 +22,16 @@ class App extends Component {
     super()
     this.state = {
       secretCodeInput: '',
-      openPresent: true, //false,
+      openPresent: false,
       wrongSecret: false,
-      showContent: true, //false,
-      initialScreenOff: true, //false,
+      showContent: false,
+      initialScreenOff: false,
       showRecipes: false,
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
     this.openPresent = this.openPresent.bind(this)
     this.onShowRecipes = this.onShowRecipes.bind(this)
+    this.onSkipInto = this.onSkipInto.bind(this)
   }
   componentDidMount () {
     setTimeout(() => this.setState({initialScreenOff: true}), 5000)
@@ -54,6 +55,14 @@ class App extends Component {
       this.setState({wrongSecret: true})
     }
   }
+  onSkipInto () {
+    this.setState({
+      openPresent: true,
+      showContent: true,
+      initialScreenOff: true,
+      showRecipes: true,
+    })
+  }
   renderLoginPage () {
     const {
       secretCodeInput,
@@ -65,7 +74,7 @@ class App extends Component {
     } = this.state
     return (
       <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
-        <InitialScreen />
+        <InitialScreen onSkipInto={this.onSkipInto}/>
         <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>
           {showContent &&
             <div className={'appContainer'}>
