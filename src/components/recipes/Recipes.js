@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
 import './styles.css'
-import Gheime from './resourses/gheime.png'
+import Gheime from './resourses/gheime.jpeg'
 import Ghorme from './resourses/ghorme.jpg'
-import Kookoo from './resourses/kookoo.jpeg'
+import Kookoo from './resourses/kookoo.jpg'
 
 import Recipe from './Recipe'
 
@@ -24,6 +24,9 @@ export default class Recipes extends Component {
     const { visible } = this.props
     return (
       <div className={`recipes${visible ? ' visible' : ''}`}>
+        <div className='recipesTitle'>
+          Recipes for You
+        </div>
         {
           _.map(RECIPES_DATA, (recipe, key) => {
             const image = this.getImage(recipe)

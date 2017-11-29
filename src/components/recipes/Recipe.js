@@ -15,7 +15,15 @@ export default class Recipe extends Component {
               {recipe.title}
             </div>
             <div className='ingredient'>
-              {recipe.ingredient}
+              {_.reduce(recipe.ingredient, (acc, item) => {
+                if (acc === '') {
+                  return item
+                }
+                return `${acc}, ${item}`
+              }, '')}
+            </div>
+            <div className='recipeDirectionBtn'>
+              <span>Recipe</span>
             </div>
         </div>
 
