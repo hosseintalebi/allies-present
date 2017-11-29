@@ -74,7 +74,11 @@ class App extends Component {
     } = this.state
     return (
       <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
-        <InitialScreen onSkipInto={this.onSkipInto}/>
+        <InitialScreen
+          onSkipInto={this.onSkipInto}
+          shouldRenderSkip={!showRecipes}
+          shouldMoveBottomRight={initialScreenOff}
+        />
         <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>
           {showContent &&
             <div className={'appContainer'}>
