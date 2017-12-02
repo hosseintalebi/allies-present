@@ -12,7 +12,7 @@ import DialogBoxFirst from './components/dialogBox/dialogBoxFirst/DialogBoxFirst
 import BlackScreen from './components/blackScreen/BlackScreen'
 import BlackCat from './components/cats/blackCat/BlackCat'
 import DialogBoxBlackScreen from './components/dialogBox/dialogBoxBlackScreen/DialogBoxBlackScreen'
-import Recipes from './components/recipes/Recipes'
+import Cards from './components/recipes/Cards'
 import './App.css';
 
 const SECRET_CODE = 'hbd2017'
@@ -103,7 +103,7 @@ class App extends Component {
                 <BlackCat />
                 <DialogBoxBlackScreen visible={openPresent} onShowRecipes={this.onShowRecipes}/>
               </BlackScreen>
-              <Recipes visible={showRecipes} />
+              <Cards visible={showRecipes} />
             </div>
           }
         </div>
