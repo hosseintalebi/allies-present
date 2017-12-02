@@ -22,7 +22,9 @@ export default class Cards extends Component {
     this.onCloseRecipe = this.onCloseRecipe.bind(this)
   }
   onClickRecipe (recipe, image) {
+    console.log('onClick init')
     return () => {
+      console.log('onClick called')
       this.setState({
         showRecipe: true,
         selectedRecipe: recipe,
@@ -51,6 +53,7 @@ export default class Cards extends Component {
   render () {
     const { showRecipe, image, selectedRecipe } = this.state
     const { visible } = this.props
+    console.log('showRecipe: ', showRecipe)
     return (
       <div className={`cards${visible ? ' visible' : ''}`}>
         <div className='cardsTitle'>

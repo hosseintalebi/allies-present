@@ -12,7 +12,7 @@ export default class DialogBoxBlackScreen extends Component {
     super()
     this.state = {
       visible: false,
-      dialog: 7, //1,
+      dialog: 1,
       showRecipesBtn: false,
     }
     this.setNextDialog = this.setNextDialog.bind(this)
@@ -136,7 +136,7 @@ export default class DialogBoxBlackScreen extends Component {
     return (
       <div style={styles} className={'dialogBoxBlackScreenContainer'}>
       <div className={'dialogBoxBlackScreen'}>
-          { /*dialog === 1 &&
+          { dialog === 1 &&
             this.renderFirtDialog()
           }
           {dialog === 2 &&
@@ -154,7 +154,7 @@ export default class DialogBoxBlackScreen extends Component {
           {dialog === 6 &&
             this.renderSixthDialog()
           }
-          {*/dialog === 7 &&
+          {dialog === 7 &&
             this.renderSeventhDialog()
           }
         </div>

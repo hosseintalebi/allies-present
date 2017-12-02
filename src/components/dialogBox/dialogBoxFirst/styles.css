@@ -30,13 +30,22 @@
 }
 
 #secretCode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
   width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: -10px;
   margin-left: -10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -58,4 +67,9 @@
 
 #secretCode span:hover {
   background: #F4D03F;
+}
+
+#secretCode input[type='password'] {
+  font-size: 16px;
+  max-width: 150px;
 }

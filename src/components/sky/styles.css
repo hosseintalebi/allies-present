@@ -1,6 +1,13 @@
 .sky {
-  display:flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:row;
   flex-direction:row;
+  -webkit-flex-direction: row;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   position: absolute;
   top: 0;

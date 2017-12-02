@@ -242,6 +242,9 @@
   height: 6%;
   width: 10%;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
@@ -256,11 +259,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: flex-end;
-      -ms-flex-align: flex-end;
-          align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .blackCatCtontainer.visible {
