@@ -1,4 +1,4 @@
-.recipes {
+.cards {
   width: 100vw;
   height: 100vh;
   z-index: 20;
@@ -14,11 +14,11 @@
   padding-bottom: 50px;
 }
 
-.recipes.visible {
+.cards.visible {
   top:0;
 }
 
-.recipes .recipesTitle {
+.cards .cardsTitle {
   font-size: 2em;
   font-weight: 600;
   font-style: bold;
@@ -26,12 +26,106 @@
   margin: 20px;
   border-bottom: 2px solid black;
 }
-.recipe {
+.card {
   max-width: 700px;
   width: 85%;
   margin: 15px auto;
   box-shadow: 3px 3px 9px -1px rgba(0,0,0,0.61);
 }
+.card .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 300px;
+}
+.card .image img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.card .container {
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding-top: 120px;
+  z-index: 19;
+}
+
+.card .container div {
+  margin: 5px 10px;
+}
+
+.card .title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.card .ingredient {
+  color: rgba(255,255,255,0.8)
+}
+
+.card .recipeDirectionBtn {
+  margin: 20px auto !important;
+}
+.card .recipeDirectionBtn span {
+  margin: 10px;
+  padding: 10px;
+  padding-top: 6px;
+  background: #52BE80;
+  color: white;
+  cursor: pointer;
+}
+
+.card .recipeDirectionBtn span:hover {
+  background: #229954;
+}
+
+.recipe {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(16,16,16,0.9);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.recipe.visible {
+  opacity: 1;
+  z-index: 20;
+}
+
+.recipe .closeBtn {
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px 0;
+}
+
+.recipe .closeBtn span {
+  color: #999;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.recipe .closeBtn span:hover {
+  color: white;
+}
+
 .recipe .image {
     display: flex;
     justify-content: center;
@@ -46,17 +140,8 @@
 }
 
 .recipe .container {
-  position: absolute;
-  bottom: 0px;
-  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-  color: white;
-  text-align: left;
-  width: 100%;
-  padding-top: 120px;
-}
-
-.recipe .container div {
-  margin: 5px 10px;
+  margin: 20px;
+  background: #fff;
 }
 
 .recipe .title {
@@ -66,20 +151,4 @@
 
 .recipe .ingredient {
   color: rgba(255,255,255,0.8)
-}
-
-.recipe .recipeDirectionBtn {
-  margin: 20px auto !important;
-}
-.recipe .recipeDirectionBtn span {
-  margin: 10px;
-  padding: 10px;
-  padding-top: 6px;
-  background: #52BE80;
-  color: white;
-  cursor: pointer;
-}
-
-.recipe .recipeDirectionBtn span:hover {
-  background: #229954;
 }
