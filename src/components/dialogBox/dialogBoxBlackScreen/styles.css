@@ -1,6 +1,6 @@
 .dialogBoxBlackScreenContainer {
   width: 100%;
-  margin: 20px;
+  margin: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
 
 .dialogBoxBlackScreen {
   text-align: left;
-  max-width: 300px;
+  width: 280px;
   font-size: 1.2em;
 }
 
