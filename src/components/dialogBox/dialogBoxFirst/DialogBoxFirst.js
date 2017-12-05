@@ -65,13 +65,15 @@ export default class DialogBoxFirst extends Component {
     const { onChangeSecretCode, secretCodeInput, openPresent, wrongSecret } = this.props
     return (
       <div id="secretCode">
-        <p>Your Secret Code:</p>
-        <input
-          type="password"
-          value={secretCodeInput}
-          onChange={onChangeSecretCode}
-        />
-        <span onClick={openPresent}>Open</span>
+        <form onSubmit={openPresent}>
+          <p>Your Secret Code:</p>
+          <input
+            type="password"
+            value={secretCodeInput}
+            onChange={onChangeSecretCode}
+          />
+          <input className="sumbitPassword" type="submit" value="Open"/>
+        </form>
         {wrongSecret ?
         <p>Sorry, wrong Secret!</p>
       : <p>{' '}</p>}

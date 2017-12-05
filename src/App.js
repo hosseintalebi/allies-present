@@ -47,7 +47,8 @@ class App extends Component {
   onShowRecipes() {
     this.setState({showRecipes: true})
   }
-  openPresent () {
+  openPresent (event) {
+    event.preventDefault()
     const { secretCodeInput } = this.state
     if (_.toLower(secretCodeInput) === SECRET_CODE) {
       this.setState({openPresent: true, wrongSecret: false})

@@ -29,7 +29,7 @@
   margin: 0;
 }
 
-#secretCode {
+#secretCode form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,16 +57,19 @@
   margin: 5px;
 }
 
-#secretCode span {
+#secretCode .sumbitPassword {
   margin-top: 10px;
   background: #FAA945;
+  border-radius: 0;
+  border-color: #FAA945;
   padding: 6px 12px;
   border-radius: 3px;
   cursor: pointer;
 }
 
-#secretCode span:hover {
+#secretCode .sumbitPassword:hover {
   background: #F4D03F;
+  border-color: #F4D03F;
 }
 
 #secretCode input[type='password'] {
