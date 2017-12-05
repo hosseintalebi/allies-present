@@ -15,12 +15,12 @@
 .dialogBox.visible{
   padding: 10px !important;
   width: 162px;
-  height: 100px;
+  height: 110px;
   border: 2px solid #E08283;
   border-radius: 10px 10px 10px 0px;
   background: #E08283;
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
+  font-weight: 400;
 }
 .dialogBox p {
   margin: 2px 5px;
