@@ -72,7 +72,9 @@ export default class DialogBoxFirst extends Component {
             value={secretCodeInput}
             onChange={onChangeSecretCode}
           />
-          <input className="sumbitPassword" type="submit" value="Open"/>
+          <span className="sumbitPassword" type="submit">
+            Open
+          </span>
         </form>
         {wrongSecret ?
         <p>Sorry, wrong Secret!</p>
