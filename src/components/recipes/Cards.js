@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
+import OverflowScrolling from 'react-overflow-scrolling'
+
 import Recipe from './Recipe'
 import './styles.css'
 import Gheime from './resourses/gheime.jpeg'
