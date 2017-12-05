@@ -56,28 +56,31 @@ export default class Cards extends Component {
     console.log('showRecipe: ', showRecipe)
     return (
       <div className={`cards${visible ? ' visible' : ''}`}>
-        <div className='cardsTitle'>
-          Recipes for You
-        </div>
-        {
-          _.map(RECIPES_DATA, (recipe, key) => {
-            const image = this.getImage(recipe)
-            return (
-                <Card
-                key={`Card${key}`}
-                recipe={recipe}
-                image={image}
-                onClickRecipe={this.onClickRecipe}
-              />
-            )
-          })
-        }
-        <Recipe
-          onClose={this.onCloseRecipe}
-          visible={showRecipe}
-          recipe={selectedRecipe}
-          image={image}
-        />
+        <OverflowScrolling className='overflow-scrolling'>
+          <div className='cardsTitle'>
+            Recipes for You
+          </div>
+          {
+            _.map(RECIPES_DATA, (recipe, key) => {
+              const image = this.getImage(recipe)
+              return (
+                  <Card
+                  key={`Card${key}`}
+                  recipe={recipe}
+                  image={image}
+                  onClickRecipe={this.onClickRecipe}
+                />
+              )
+            })
+          }
+          <Recipe
+            onClose={this.onCloseRecipe}
+            visible={showRecipe}
+            recipe={selectedRecipe}
+            image={image}
+          />
+        </OverflowScrolling>
+
       </div>
     )
   }

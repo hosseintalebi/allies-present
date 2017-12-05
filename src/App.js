@@ -77,7 +77,7 @@ class App extends Component {
       <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
         <InitialScreen
           onSkipInto={this.onSkipInto}
-          shouldRenderSkip={!showRecipes}
+          shouldRenderSkip={!openPresent}
           shouldMoveBottomRight={initialScreenOff}
         />
         <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>

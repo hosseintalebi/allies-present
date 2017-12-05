@@ -37,7 +37,7 @@ export default class DialogBoxBlackScreen extends Component {
         <Typist.Delay ms={500} />
         <p>We're inside the gift box and I'm the Wise Cat!</p>
         <Typist.Delay ms={500} />
-        <p>Apart from being wise, I'm able to deform to different cat shapes.</p>
+        <p>Apart from being wise, I'm able to change to different cat shapes.</p>
         <Typist.Delay ms={1500} />
       </Typist>
     )

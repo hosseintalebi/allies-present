@@ -122,7 +122,8 @@
   -moz-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow-x: scroll; /* has to be scroll, not auto */
+  overflow-y: scroll;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
 }
@@ -184,4 +185,9 @@
 
 .recipe .ingredient {
   color: rgba(255,255,255,0.8)
+}
+
+.overflow-scrolling {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
