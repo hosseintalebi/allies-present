@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
-import OverflowScrolling from 'react-overflow-scrolling'
-
 import Recipe from './Recipe'
 import './styles.css'
-import Gheime from './resourses/gheime.jpeg'
+import Pizza from './resourses/pizza.jpg'
 import Ghorme from './resourses/ghorme.jpg'
 import Kookoo from './resourses/kookoo.jpg'
 
 import Card from './Card'
 
-import { RECIPES_DATA } from './constants'
+import {
+  IMAGE,
+  RECIPES_DATA,
+} from './constants'
 
 export default class Cards extends Component {
   constructor() {
@@ -42,9 +43,9 @@ export default class Cards extends Component {
     })
   }
   getImage(recipe) {
-    switch (recipe.image) {
-      case 'gheime':
-        return Gheime
+    switch (recipe[IMAGE]) {
+      case 'pizza':
+        return Pizza
       case 'ghorme':
         return Ghorme
       case 'kookoo':
@@ -58,31 +59,28 @@ export default class Cards extends Component {
     console.log('showRecipe: ', showRecipe)
     return (
       <div className={`cards${visible ? ' visible' : ''}`}>
-        <OverflowScrolling className='overflow-scrolling'>
-          <div className='cardsTitle'>
-            Recipes for You
-          </div>
-          {
-            _.map(RECIPES_DATA, (recipe, key) => {
-              const image = this.getImage(recipe)
-              return (
-                  <Card
-                  key={`Card${key}`}
-                  recipe={recipe}
-                  image={image}
-                  onClickRecipe={this.onClickRecipe}
-                />
-              )
-            })
-          }
-          <Recipe
-            onClose={this.onCloseRecipe}
-            visible={showRecipe}
-            recipe={selectedRecipe}
-            image={image}
-          />
-        </OverflowScrolling>
-
+        <div className='cardsTitle'>
+          Recipes for You
+        </div>
+        {
+          _.map(RECIPES_DATA, (recipe, key) => {
+            const image = this.getImage(recipe)
+            return (
+                <Card
+                key={`Card${key}`}
+                recipe={recipe}
+                image={image}
+                onClickRecipe={this.onClickRecipe}
+              />
+            )
+          })
+        }
+        <Recipe
+          onClose={this.onCloseRecipe}
+          visible={showRecipe}
+          recipe={selectedRecipe}
+          image={image}
+        />
       </div>
     )
   }

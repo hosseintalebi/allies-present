@@ -65,7 +65,7 @@
   color: white;
   text-align: left;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 30px;
   z-index: 19;
 }
 
@@ -183,11 +183,24 @@
   text-transform: uppercase;
 }
 
-.recipe .ingredient {
-  color: rgba(255,255,255,0.8)
+.recipe .introduction {
+  text-align: left;
+  line-height: 1.5em;
+  margin: 20px 0;
 }
 
-.overflow-scrolling {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+.recipe .ingredient-full {
+  text-align: left;
+}
+
+.recipe .ingredient-full .title {
+  font-weight: 500;
+  margin: 10px;
+}
+.recipe .ingredient-full > div > div {
+  margin: 10px;
+}
+
+.recipe .textContainer {
+  margin: 20px;
 }

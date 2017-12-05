@@ -2,6 +2,18 @@ import React, { Component } from 'react'
 import _ from 'lodash'
 import './styles.css'
 
+import {
+  TITLE,
+  IMAGE,
+  INGREDIENT,
+  INGREDIENT_FULL,
+  INTRODUCTION,
+  DESCRIPTION,
+  STEPS,
+  SOURCE,
+  RECIPES_DATA,
+} from './constants'
+
 export default class Card extends Component {
 
   render () {
@@ -13,10 +25,10 @@ export default class Card extends Component {
         </div>
         <div className='container'>
             <div className='title'>
-              {recipe.title}
+              {recipe[TITLE]}
             </div>
             <div className='ingredient'>
-              {_.reduce(recipe.ingredient, (acc, item) => {
+              {_.reduce(recipe[INGREDIENT], (acc, item) => {
                 if (acc === '') {
                   return item
                 }
