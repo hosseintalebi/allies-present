@@ -126,6 +126,7 @@
   overflow-y: scroll;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+  color: #444;
 }
 
 .recipe.visible {
@@ -178,9 +179,16 @@
   background: #fff;
 }
 
-.recipe .title {
+.recipe .title1 {
   font-size: 1.2em;
   text-transform: uppercase;
+  color: #674172;
+}
+
+.recipe .title2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .recipe .introduction {
@@ -203,4 +211,32 @@
 
 .recipe .textContainer {
   margin: 20px;
+}
+
+.recipe .descriptions {
+  text-align: left;
+  margin: 20px 10px;
+}
+
+.recipe .descriptions .title {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.recipe .descriptions .step, .recipe .ingredient-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  line-height: 1.5em;
+}
+.recipe .descriptions .step-number, .recipe .ingredient-item .bullet{
+  margin-right: 10px;
+  color: #BE90D4;
+}
+
+.recipe .source {
+  margin: 20px;
+  margin-top: 40px;
+  text-align: right;
+  color: #888;
 }

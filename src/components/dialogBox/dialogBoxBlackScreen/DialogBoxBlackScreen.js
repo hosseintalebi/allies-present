@@ -57,7 +57,7 @@ export default class DialogBoxBlackScreen extends Component {
   renderThirdDialog () {
     return (
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
-        <p>Hossein came to me for ideas about a perfect gift for you.</p>
+        <p>Hossein came to me and asked for ideas about a perfect gift for you.</p>
         <Typist.Delay ms={500} />
         <p>I told him it's simple. The perfect gift for Allie is what she loves...</p>
         <Typist.Delay ms={500} />

@@ -10,7 +10,7 @@ export const SOURCE_LINK = 'source_link'
 
 export const RECIPES_DATA = [
   {
-    [TITLE]: 'Pizza',
+    [TITLE]: 'Pizza (from scratch)',
     [IMAGE]: 'pizza',
     [INGREDIENT]: ['Gluten-free flour', 'pizza sauce', 'dairy-free cheese', 'toppings'],
     [INGREDIENT_FULL]: [

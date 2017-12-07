@@ -19,8 +19,8 @@ export default class Card extends Component {
   renderCloseBtn () {
     const { onClose } = this.props
     return (
-      <div className='closeBtn'>
-        <span onClick={onClose}>X</span>
+      <div className='closeBtn closeArea'>
+        <span className='closeArea' onClick={onClose}>X</span>
       </div>
     )
   }
@@ -37,7 +37,7 @@ export default class Card extends Component {
     const { recipe } = this.props
     return (
       <div className='textContainer'>
-        <div className='title'>
+        <div className='title1'>
           {recipe[TITLE]}
         </div>
         <div className='direction'>
@@ -53,7 +53,11 @@ export default class Card extends Component {
     const { recipe } = this.props
     return (
       <div className='introduction'>
-        {recipe[INTRODUCTION]}
+        {
+          _.map(recipe[INTRODUCTION], (intro) => {
+            return <div>{intro}</div>
+          })
+        }
       </div>
     )
   }
@@ -61,12 +65,13 @@ export default class Card extends Component {
     const { recipe } = this.props
     return (
       <div className='ingredient-full'>
-        <div className='title'>What You'll Need</div>
+        <div className='title1'>What You'll Need</div>
         <div>
           {_.map(recipe[INGREDIENT_FULL], (item) => {
             return (
-              <div>
-                {`- ${item}`}
+              <div className='ingredient-item'>
+                <div className='bullet'>•</div>
+                <div>{item}</div>
               </div>
             )
           })}
@@ -79,7 +84,7 @@ export default class Card extends Component {
     const { recipe } = this.props
     return (
       <div className='descriptions'>
-        <div className='title'>
+        <div className='title1'>
           How to Make It
         </div>
         <div>
@@ -96,7 +101,8 @@ export default class Card extends Component {
   renderDecription (description) {
     return (
       <div className='description'>
-        <div className='title'>
+        <div className='title2'>
+          {description[TITLE]}
         </div>
         {_.size(description[INTRODUCTION]) > 0 &&
           _.map(description[INTRODUCTION], (intro)=> {
@@ -113,10 +119,15 @@ export default class Card extends Component {
   }
 
   renderSteps (steps) {
-    return _.map(steps, (step) => {
+    return _.map(steps, (step, index) => {
       return (
         <div className='step'>
-          {step}
+          <div className='step-number'>
+            {`0${index + 1}`}
+          </div>
+          <div>
+            {step}
+          </div>
         </div>
       )
     })
@@ -134,9 +145,11 @@ export default class Card extends Component {
     )
   }
   render () {
-    const { visible } = this.props
+    const { visible, onClose} = this.props
     return (
-      <div className={`recipe${visible ? ' visible' : ''}`}>
+      <div
+        className={`closeArea recipe${visible ? ' visible' : ''}`}
+        onClick={onClose}>
         {this.renderCloseBtn()}
         <div className='container'>
           {this.renderImage()}

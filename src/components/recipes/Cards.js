@@ -35,12 +35,16 @@ export default class Cards extends Component {
       })
     }
   }
-  onCloseRecipe () {
-    this.setState({
-      showRecipe: false,
-      selectedRecipe: {},
-      image: null,
-    })
+  onCloseRecipe (ref) {
+    console.log('>>>>>>>',ref.target.className)
+    const className = ref.target.className || ''
+    if (className.indexOf('closeArea') !== -1) {
+      this.setState({
+        showRecipe: false,
+        selectedRecipe: {},
+        image: null,
+      })
+    }
   }
   getImage(recipe) {
     switch (recipe[IMAGE]) {
