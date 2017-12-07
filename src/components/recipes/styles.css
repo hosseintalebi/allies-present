@@ -46,15 +46,6 @@
   box-shadow: 3px 3px 9px -1px rgba(0,0,0,0.61);
 }
 .card .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   overflow: hidden;
   max-height: 300px;
 }
@@ -139,6 +130,7 @@
 
 .recipe .container {
   max-width: 700px;
+  width: 85%;
 }
 .recipe.visible {
   opacity: 1;
@@ -167,15 +159,6 @@
 }
 
 .recipe .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   overflow: hidden;
   max-height: 300px;
 }
@@ -249,7 +232,7 @@
 
 .recipe .source {
   margin: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: right;
   color: #888;
 }
