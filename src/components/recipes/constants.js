@@ -12,7 +12,7 @@ export const RECIPES_DATA = [
   {
     [TITLE]: 'Pizza (from scratch)',
     [IMAGE]: 'pizza',
-    [INGREDIENT]: ['Gluten-free flour', 'pizza sauce', 'dairy-free cheese', 'toppings'],
+    [INGREDIENT]: ['gluten-free flour', 'pizza sauce', 'dairy-free cheese', 'toppings'],
     [INGREDIENT_FULL]: [
       '1 cup water (warm, plus as much as 1/4 cup more if needed)',
       '1 tablespoon dry active yeast',

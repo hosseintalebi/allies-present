@@ -84,6 +84,12 @@ export default class Cards extends Component {
           recipe={selectedRecipe}
           image={image}
         />
+        <div className='credit'>
+          • Made with Love •
+          <div>
+          by Hossein
+          </div>
+        </div>
       </div>
     )
   }
