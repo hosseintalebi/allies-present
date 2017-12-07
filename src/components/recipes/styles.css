@@ -8,16 +8,6 @@
   position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding-bottom: 50px;
 }
 
@@ -25,13 +15,14 @@
   top:0;
 }
 
-.cards .cardsTitle {
+.cards .cardsTitle span {
   font-size: 2em;
   font-weight: 600;
   font-style: bold;
   font-weight: bold;
   margin: 20px;
   border-bottom: 2px solid black;
+  display: inline-block;
 }
 
 .cards .credit {
@@ -42,7 +33,7 @@
 .card {
   max-width: 700px;
   width: 85%;
-  margin: 15px auto;
+  margin: 25px auto;
   box-shadow: 3px 3px 9px -1px rgba(0,0,0,0.61);
 }
 .card .image {

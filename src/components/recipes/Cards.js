@@ -63,7 +63,9 @@ export default class Cards extends Component {
     return (
       <div className={`cards${visible ? ' visible' : ''}`}>
         <div className='cardsTitle'>
-          Recipes for You
+          <span>
+            Recipes for You
+          </span>
         </div>
         {
           _.map(RECIPES_DATA, (recipe, key) => {
