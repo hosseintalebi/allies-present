@@ -77,8 +77,7 @@
 }
 .card .recipeDirectionBtn span {
   margin: 10px;
-  padding: 10px;
-  padding-top: 6px;
+  padding: 8px 10px;
   background: #52BE80;
   color: white;
   cursor: pointer;

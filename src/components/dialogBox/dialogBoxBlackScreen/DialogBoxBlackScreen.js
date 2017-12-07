@@ -103,9 +103,9 @@ export default class DialogBoxBlackScreen extends Component {
         <Typist.Delay ms={1000} />
         <p>Now let me explain how it works.</p>
         <Typist.Delay ms={500} />
-        <p>He found 10 new recipes for you!</p>
+        <p>He selected 10 new recipes for you!</p>
         <Typist.Delay ms={500} />
-        <p>You can choose 5 of those and he'll cook them for you in 5 weekends!</p>
+        <p>You can choose 5 of those and he'll cook/bake them for you in 5 weekends!</p>
         <Typist.Delay ms={1500} />
       </Typist>
     )
