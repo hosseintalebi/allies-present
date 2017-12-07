@@ -123,7 +123,7 @@ export default class Card extends Component {
       return (
         <div className='step'>
           <div className='step-number'>
-            {`0${index + 1}`}
+            {`${index < 9 ? '0' : ''}${index + 1}`}
           </div>
           <div>
             {step}

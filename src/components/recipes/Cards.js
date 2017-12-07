@@ -3,7 +3,7 @@ import _ from 'lodash'
 import Recipe from './Recipe'
 import './styles.css'
 import Pizza from './resourses/pizza.jpg'
-import Ghorme from './resourses/ghorme.jpg'
+import Croissants from './resourses/croissants.jpg'
 import Kookoo from './resourses/kookoo.jpg'
 
 import Card from './Card'
@@ -36,7 +36,6 @@ export default class Cards extends Component {
     }
   }
   onCloseRecipe (ref) {
-    console.log('>>>>>>>',ref.target.className)
     const className = ref.target.className || ''
     if (className.indexOf('closeArea') !== -1) {
       this.setState({
@@ -50,8 +49,8 @@ export default class Cards extends Component {
     switch (recipe[IMAGE]) {
       case 'pizza':
         return Pizza
-      case 'ghorme':
-        return Ghorme
+      case 'croissants':
+        return Croissants
       case 'kookoo':
         return Kookoo
     }
