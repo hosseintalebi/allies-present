@@ -1,10 +1,14 @@
 {
-  "main.css": "static/css/main.1e6361a0.css",
-  "main.css.map": "static/css/main.1e6361a0.css.map",
-  "main.js": "static/js/main.6e799277.js",
-  "main.js.map": "static/js/main.6e799277.js.map",
+  "main.css": "static/css/main.fe71f25c.css",
+  "main.css.map": "static/css/main.fe71f25c.css.map",
+  "main.js": "static/js/main.b1432cc0.js",
+  "main.js.map": "static/js/main.b1432cc0.js.map",
   "static/media/croissants.jpg": "static/media/croissants.37f77229.jpg",
-  "static/media/kookoo.jpg": "static/media/kookoo.2001204c.jpg",
+  "static/media/gnocchi.jpg": "static/media/gnocchi.be66a1eb.jpg",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
-  "static/media/pizza.jpg": "static/media/pizza.9daedc7b.jpg"
+  "static/media/paella.jpeg": "static/media/paella.be809610.jpeg",
+  "static/media/pizza.jpg": "static/media/pizza.9daedc7b.jpg",
+  "static/media/sholezard.jpg": "static/media/sholezard.a60caeb0.jpg",
+  "static/media/tofuKorma.jpg": "static/media/tofuKorma.f3519bb1.jpg",
+  "static/media/tofupad.jpg": "static/media/tofupad.0bd6ba09.jpg"
 }
