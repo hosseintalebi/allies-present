@@ -4,8 +4,11 @@ import Recipe from './Recipe'
 import './styles.css'
 import Pizza from './resourses/pizza.jpg'
 import Croissants from './resourses/croissants.jpg'
-import Kookoo from './resourses/kookoo.jpg'
-
+import Sholezard from './resourses/sholezard.jpg'
+import Paella from './resourses/paella.jpeg'
+import TofuKorma from './resourses/tofuKorma.jpg'
+import Tofupad from './resourses/tofupad.jpg'
+import Gnocchi from './resourses/gnocchi.jpg'
 import Card from './Card'
 
 import {
@@ -51,8 +54,16 @@ export default class Cards extends Component {
         return Pizza
       case 'croissants':
         return Croissants
-      case 'kookoo':
-        return Kookoo
+      case 'sholezard':
+        return Sholezard
+      case 'paella':
+        return Paella
+      case 'tofuKorma':
+        return TofuKorma
+      case 'tofupad':
+        return Tofupad
+      case 'gnocchi':
+        return Gnocchi
     }
   }
 

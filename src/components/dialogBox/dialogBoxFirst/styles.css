@@ -26,7 +26,8 @@
   margin: 2px 5px;
 }
 .dialogBox div {
-  margin: 0;
+  margin-right: 15px;
+  margin-left: 5px;
 }
 
 #secretCode form {

@@ -118,7 +118,7 @@ export default class DialogBoxBlackScreen extends Component {
       <div>
       <Typist onTypingDone={this.showRecipesBtn} cursor={{show: false}}>
         <Typist.Delay ms={1000} />
-        <p>So let's see the recipes he chose for you.</p>
+        <p>So let's see the recipes he's chosen for you.</p>
         <Typist.Delay ms={500} />
         <p >Click on the button to unveil them:</p>
         <Typist.Delay ms={500} />

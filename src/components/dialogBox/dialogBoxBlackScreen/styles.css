@@ -21,7 +21,7 @@
   font-size: 1.2em;
 }
 
-.dialogBox {
+.dialogBoxBlackScreen .dialogBox {
   height: 0;
   width: 0;
   padding: 10px !important;
@@ -34,7 +34,7 @@
   -o-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
 }
-.dialogBox.visible{
+.dialogBoxBlackScreen .dialogBox.visible{
   padding: 10px !important;
   width: 162px;
   height: 100px;
@@ -44,10 +44,10 @@
   color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
 }
-.dialogBox p {
+.dialogBoxBlackScreen .dialogBox p {
   margin: 1px 5px;
 }
-.dialogBox div {
+.dialogBoxBlackScreen .dialogBox div {
   margin: 0;
 }
 

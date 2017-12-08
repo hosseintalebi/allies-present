@@ -75,10 +75,10 @@ export default class DialogBoxFirst extends Component {
           <span onClick={openPresent} type="submit">
             Open
           </span>
+          {wrongSecret ?
+          <p>Sorry, wrong secret!</p>
+        : <p>{' '}</p>}
         </form>
-        {wrongSecret ?
-        <p>Sorry, wrong Secret!</p>
-      : <p>{' '}</p>}
       </div>
     )
   }
