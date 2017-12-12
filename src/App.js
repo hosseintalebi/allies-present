@@ -15,7 +15,7 @@ import DialogBoxBlackScreen from './components/dialogBox/dialogBoxBlackScreen/Di
 import Cards from './components/recipes/Cards'
 import './App.css';
 
-const SECRET_CODE = 'wheresmygift'
+const SECRET_CODE = 'Whereismypresent'
 
 class App extends Component {
   constructor () {
