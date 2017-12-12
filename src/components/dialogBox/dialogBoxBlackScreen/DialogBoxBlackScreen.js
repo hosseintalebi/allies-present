@@ -35,7 +35,7 @@ export default class DialogBoxBlackScreen extends Component {
         <Typist.Delay ms={delayOffset + INITIAL_DELAY} />
         <p>You may wonder where we are and who I am!</p>
         <Typist.Delay ms={500} />
-        <p>We're inside the gift box and I'm the Wise Cat!</p>
+        <p>We're inside the present box and I'm the Wise Cat!</p>
         <Typist.Delay ms={500} />
         <p>Apart from being wise, I'm able to change to different cat shapes.</p>
         <Typist.Delay ms={1500} />
@@ -47,7 +47,7 @@ export default class DialogBoxBlackScreen extends Component {
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>Ok... enough about me! Let's get to your present.</p>
         <Typist.Delay ms={500} />
-        <p>Considering that I'm inside your gift box, you may think that I'm your present!</p>
+        <p>Considering that I'm inside your present box, you may think that I'm your present!</p>
         <Typist.Delay ms={500} />
         <p>I know it's disappointing... <span style={{fontSize: '2em'}}>but I'm not!</span></p>
         <Typist.Delay ms={1500} />
@@ -57,9 +57,9 @@ export default class DialogBoxBlackScreen extends Component {
   renderThirdDialog () {
     return (
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
-        <p>Hossein came to me and asked for ideas about a perfect gift for you.</p>
+        <p>Hossein came to me and asked for ideas about a perfect present for you.</p>
         <Typist.Delay ms={500} />
-        <p>I told him it's simple. The perfect gift for Allie is what she loves...</p>
+        <p>I told him it's simple. The perfect present for Allie is what she loves...</p>
         <Typist.Delay ms={500} />
         <p>if you give her that, she'll be happy!</p>
         <Typist.Delay ms={1500} />
@@ -71,7 +71,7 @@ export default class DialogBoxBlackScreen extends Component {
       <Typist onTypingDone={this.setNextDialog} cursor={{show: false}}>
         <p>You know what I'm talking about, right?</p>
         <Typist.Delay ms={500} />
-        <p style={{textAlign: 'center'}}>Yeah! Your gift is:</p>
+        <p style={{textAlign: 'center'}}>Yeah! Your present is:</p>
         <Typist.Delay ms={500} />
         <p style={{textAlign: 'center'}}>...</p>
         <Typist.Backspace count={3} delay={1500} />
