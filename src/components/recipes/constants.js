@@ -66,6 +66,47 @@ export const RECIPES_DATA = [
     [SOURCE_LINK]: 'https://www.thespruce.com/dairy-free-gluten-free-pizza-1001403'
   },
   {
+    [TITLE]: 'Vegetable Paella',
+    [IMAGE]: 'paella',
+    [INGREDIENT]: [ 'tomatoes', 'garlic', 'artichokes', 'rice'],
+    [INGREDIENT_FULL]: [
+      '8 vine-ripened plum tomatoes',
+      'Kosher salt',
+      '1/4 cup extra-virgin olive oil, plus more for drizzling',
+      '1 small onion, finely chopped',
+      '3 cloves garlic, finely chopped',
+      '1 1/2 teaspoons paprika',
+      '1/4 teaspoon cayenne pepper',
+      '1 teaspoon saffron threads',
+      '1 large bulb fennel, cut into 8 wedges',
+      '8 baby artichokes, trimmed and halved (see Cook\'s Note)',
+      '1 large Japanese eggplant, cut into 2-inch pieces',
+      '4 ounces shiitake mushrooms, stemmed',
+      '2 cups dry white wine',
+      '2 1/2 cups short-grain paella rice',
+      '4 ounces haricots verts or string beans, halved if large',
+      '1/4 cup capers, drained',
+      '1/4 cup piquillo or roasted red peppers, cut into strips',
+      'Chopped fresh parsley, for garnish (optional)',
+    ],
+    [INTRODUCTION]: [
+    ],
+    [DESCRIPTION]: [
+      {
+        [TITLE]: '',
+        [INTRODUCTION]: [],
+        [STEPS]: [
+          'Preheat the oven to 450 degrees. Core the tomatoes, cut into wedges and place in a medium bowl; season with salt, drizzle with a bit of olive oil and toss. Set aside.',
+          'Heat 1/4 cup olive oil in a 12-inch ovenproof skillet or a paella pan over medium-high heat. Add the onion, garlic, paprika, cayenne and saffron and season with salt. Cook, stirring occasionally, until the onion softens, about 5 minutes.',
+          'Add the fennel wedges and cook until lightly browned on one side, about 5 minutes. Flip the fennel and add the baby artichokes and eggplant to the skillet; cook until slightly tender, about 4 more minutes. Add the mushrooms and cook for 1 to 2 minutes. Pour in the wine and simmer until reduced by about one-third. Stir in the rice and 1 3/4 teaspoons salt; add just enough water to cover the rice completely, 2 1/2 to 3 cups. Increase the heat to high and boil for 2 to 3 minutes. Scatter the haricots verts and 2 tablespoons capers over the rice. Remove the pan from the heat and arrange the tomatoes on top; drizzle with any tomato juices.',
+          'Transfer the paella to the oven and bake, undisturbed, for 20 minutes. Scatter the remaining 2 tablespoons capers and the piquillo peppers over the paella. Turn off the oven but leave the paella inside to continue cooking until the rice is tender, 15 to 20 more minutes. Garnish with parsley, if desired',
+        ],
+      },
+    ],
+    [SOURCE_NAME]: 'foodnetwork',
+    [SOURCE_LINK]: 'http://www.foodnetwork.com/recipes/food-network-kitchen/vegetable-paella-recipe-1972902#reviewsTop'
+  },
+  {
     [TITLE]: 'Croissants',
     [IMAGE]: 'croissants',
     [INGREDIENT]: [ 'gluten free plain flour', 'dairy free milk', 'egg'],
@@ -115,83 +156,6 @@ export const RECIPES_DATA = [
     ],
     [SOURCE_NAME]: 'freefromfavourites',
     [SOURCE_LINK]: 'http://freefromfavourites.com/gluten-dairy-free-croissants/'
-  },
-  {
-    [TITLE]: 'Sholeh Zard',
-    [IMAGE]: 'sholezard',
-    [INGREDIENT]: [ 'rice', 'sugar', 'saffron', 'rosewater'],
-    [INGREDIENT_FULL]: [
-      '1 Cup  white rice',
-      '2 Cups  white sugar',
-      '1/4 Cups  butter',
-      '2 Teaspoons  ground saffron',
-      '3 Cups  water',
-      '1/4 Cups  slivered almonds',
-      '1/2 Cups  rosewater',
-      '1 Teaspoon  ground cardamom',
-      '2 Teaspoons  ground cinnamon',
-    ],
-    [INTRODUCTION]: [
-      'The history of this beautiful traditional dessert goes back to several hundred years ago, when it was served only on special occasions like the Persian new year. Nowadays it´s a more common food in Iran, but still people tend to make it on special events and share it with friends or family. It might sound strange but in Iran it’s very common that some neighbor, that you may hardly know knocks on your door and gives you a big bowl of this delicious dessert. for free! This kind of free foods are called “Nazri“.',
-    ],
-    [DESCRIPTION]: [
-      {
-        [TITLE]: '',
-        [INTRODUCTION]: [],
-        [STEPS]: [
-          'Rinse the rice with cool water, put the rice and 2 cups of water in a bowl, soak it overnight.',
-          'Drain the soaked rice, place in a large pot, add 3 cups of water, bring to a boil over medium heat, then reduce the heat and cook over low heat until rice is soft, stirring occasionally. Add more water if needed.',
-          'Add sugar to the pot and stir until it is completely dissolved and make sure to stir the rice every so often so that it does not stick to the bottom of the pot.',
-          'Add 5 tablespoons of hot water to the ground saffron. Let it brew while the rice cooks.',
-          'Add butter, ground cardamom, rosewater and saffron to the rice.',
-          'Continue cooking the pudding on the stove top on low heat until it is dense. Five minutes before serving it add silvered almonds.',
-          'Place it in small bowls. Garnish with cinnamon and slivered almond or pistachio. Let cool before serving.',
-        ],
-      },
-    ],
-    [SOURCE_NAME]: 'thepersianpot',
-    [SOURCE_LINK]: 'http://www.thepersianpot.com/recipe/shole-zard-saffron-rice-pudding/'
-  },
-  {
-    [TITLE]: 'Vegetable Paella',
-    [IMAGE]: 'paella',
-    [INGREDIENT]: [ 'tomatoes', 'garlic', 'artichokes', 'rice'],
-    [INGREDIENT_FULL]: [
-      '8 vine-ripened plum tomatoes',
-      'Kosher salt',
-      '1/4 cup extra-virgin olive oil, plus more for drizzling',
-      '1 small onion, finely chopped',
-      '3 cloves garlic, finely chopped',
-      '1 1/2 teaspoons paprika',
-      '1/4 teaspoon cayenne pepper',
-      '1 teaspoon saffron threads',
-      '1 large bulb fennel, cut into 8 wedges',
-      '8 baby artichokes, trimmed and halved (see Cook\'s Note)',
-      '1 large Japanese eggplant, cut into 2-inch pieces',
-      '4 ounces shiitake mushrooms, stemmed',
-      '2 cups dry white wine',
-      '2 1/2 cups short-grain paella rice',
-      '4 ounces haricots verts or string beans, halved if large',
-      '1/4 cup capers, drained',
-      '1/4 cup piquillo or roasted red peppers, cut into strips',
-      'Chopped fresh parsley, for garnish (optional)',
-    ],
-    [INTRODUCTION]: [
-    ],
-    [DESCRIPTION]: [
-      {
-        [TITLE]: '',
-        [INTRODUCTION]: [],
-        [STEPS]: [
-          'Preheat the oven to 450 degrees. Core the tomatoes, cut into wedges and place in a medium bowl; season with salt, drizzle with a bit of olive oil and toss. Set aside.',
-          'Heat 1/4 cup olive oil in a 12-inch ovenproof skillet or a paella pan over medium-high heat. Add the onion, garlic, paprika, cayenne and saffron and season with salt. Cook, stirring occasionally, until the onion softens, about 5 minutes.',
-          'Add the fennel wedges and cook until lightly browned on one side, about 5 minutes. Flip the fennel and add the baby artichokes and eggplant to the skillet; cook until slightly tender, about 4 more minutes. Add the mushrooms and cook for 1 to 2 minutes. Pour in the wine and simmer until reduced by about one-third. Stir in the rice and 1 3/4 teaspoons salt; add just enough water to cover the rice completely, 2 1/2 to 3 cups. Increase the heat to high and boil for 2 to 3 minutes. Scatter the haricots verts and 2 tablespoons capers over the rice. Remove the pan from the heat and arrange the tomatoes on top; drizzle with any tomato juices.',
-          'Transfer the paella to the oven and bake, undisturbed, for 20 minutes. Scatter the remaining 2 tablespoons capers and the piquillo peppers over the paella. Turn off the oven but leave the paella inside to continue cooking until the rice is tender, 15 to 20 more minutes. Garnish with parsley, if desired',
-        ],
-      },
-    ],
-    [SOURCE_NAME]: 'foodnetwork',
-    [SOURCE_LINK]: 'http://www.foodnetwork.com/recipes/food-network-kitchen/vegetable-paella-recipe-1972902#reviewsTop'
   },
   {
     [TITLE]: 'Tofu Cauliflower Korma',
@@ -300,5 +264,156 @@ export const RECIPES_DATA = [
     ],
     [SOURCE_NAME]: 'marthastewart',
     [SOURCE_LINK]: 'https://www.marthastewart.com/872941/vegetable-and-tofu-pad-thai'
+  },
+  {
+    [TITLE]: 'Felafel',
+    [IMAGE]: 'felafel',
+    [INGREDIENT]: [ 'chickpeas', 'onion', 'garlic', 'cilantro'],
+    [INGREDIENT_FULL]: [
+      '1 cup dried chickpeas',
+      '1/2 large onion, roughly chopped (about 1 cup)',
+      '2 tablespoons finely chopped fresh parsley',
+      '2 tablespoons finely chopped fresh cilantro',
+      '1 teaspoon salt',
+      '1/2-1 teaspoon dried hot red pepper',
+      '4 cloves of garlic',
+      '1 teaspoon cumin',
+      '1 teaspoon baking powder',
+      '4-6 tablespoons flour',
+      'Soybean or vegetable oil for frying',
+      'Chopped tomato for garnish',
+      'Diced onion for garnish',
+      'Diced green bell pepper for garnish',
+      'Tahina sauce',
+      'Pita bread',
+    ],
+    [INTRODUCTION]: [
+    ],
+    [DESCRIPTION]: [
+      {
+        [TITLE]: '',
+        [INTRODUCTION]: [],
+        [STEPS]: [
+          'Put the chickpeas in a large bowl and add enough cold water to cover them by at least 2 inches. Let soak overnight, then drain. Or use canned chickpeas, drained.',
+          'Place the drained, uncooked chickpeas and the onions in the bowl of a food processor fitted with a steel blade. Add the parsley, cilantro, salt, hot pepper, garlic, and cumin. Process until blended but not pureed.',
+          'Sprinkle in the baking powder and 4 tablespoons of the flour, and pulse. You want to add enough bulgur or flour so that the dough forms a small ball and no longer sticks to your hands. Turn into a bowl and refrigerate, covered, for several hours.',
+          'Form the chickpea mixture into balls about the size of walnuts, or use a falafel scoop, available in Middle-Eastern markets.',
+          'Heat 3 inches of oil to 375ºF in a deep pot or wok and fry 1 ball to test. If it falls apart, add a little flour. Then fry about 6 balls at once for a few minutes on each side, or until golden brown. Drain on paper towels. Stuff half a pita with falafel balls, chopped tomatoes, onion, green pepper, and pickled turnips. Drizzle with tahina thinned with water.',
+        ],
+      },
+    ],
+    [SOURCE_NAME]: 'epicurious',
+    [SOURCE_LINK]: 'https://www.epicurious.com/recipes/food/views/my-favorite-falafel-231755'
+  },
+  {
+    [TITLE]: 'Zucchini lasagna',
+    [IMAGE]: 'lasagna',
+    [INGREDIENT]: [ 'zucchini', 'mozarella', 'garlic', 'dried'],
+    [INGREDIENT_FULL]: [
+      '3 or 4 medium zucchini (about 18 one eighth inch slices)',
+      '2 1/2 cups marinara sauce (my Homestyle Marinara Sauce or jarred)',
+      '2 cups herbed vegan ricotta cheese (my Vegan Ricotta Cheese recipe includes herbs, or use plain store-bought ricotta and add seasoning below)',
+      '1 cup shredded vegan mozarella (I use Daiya brand)',
+      '1/4 cup vegan parmesan cheese (my Vegan Parmesan Cheese or store-bought)',
+      'herb seasoning to add to store-bought vegan ricotta cheese',
+      '1 1/2 teaspoons dried oregano',
+      '1 1/2 teaspoons sea salt finely ground (less if purchased cheese tastes salty)',
+      '1 teaspoon dried basil',
+      '1/4 teaspoon garlic powder',
+      'pinch black pepper',
+    ],
+    [INTRODUCTION]: [
+    ],
+    [DESCRIPTION]: [
+      {
+        [TITLE]: '',
+        [INTRODUCTION]: [],
+        [STEPS]: [
+          'If using my recipes for marinara sauce, vegan ricotta and parmesan cheeses, these can all be made in advance and stored in the refrigerator for a few days until ready to assemble lasagna. Spices will blend nicely.',
+          'Remove refrigerated items from fridge and allow them to come to room temperature. If using store-bought ricotta gently stir in herb seasoning above and set aside.',
+          'Remove ends of zucchini and slice lengthwise in about one eighth inch thick slices. I like to cut six slices for the top layer a little thinner. Put cooling rack in baking sheet pan and lay zucchini flat, sprinkle with salt on each side and allow to weep for 30 minutes (see pictures in post). Alternatively, you may place the zucchini a strainer in your sink, salt it, and allow it to weep for 30 minutes.',
+          'Rinse salt from zucchini and place slices flat on a towel. Place second towel on top and lightly blot off excess water.',
+          'Spread a thin layer of sauce on the bottom of a casserole pan (I used a glass 12" x 7.5"), but a 13" x 9" will work with a little extra of all the ingredients. Place a single layer of zucchini slices (side to side) across bottom of pan (about six slices). Place a dollop of vegan ricotta on each slice and spread evenly (about one cup for the whole layer). Sprinkle with shredded vegan mozarella cheese (about 1/2 cup for the whole layer). Top with a layer of sauce (about 3/4 cup). Repeat process: layer zucchini, vegan ricotta, vegan mozzarella and sauce. Top with a third layer of zucchini (I like to use thinner slices for this layer). Spread with another layer of sauce (about 1/2 cup) and sprinkle with vegan parmesan or shredded vegan mozzarella (about 1/4 cup).',
+          'Cover with foil and bake at 350 degrees Fahrenheit for about 40 minutes (remove foil after 20 minutes). Allow more or less cooking time depending on thickness of sauce. Remove from oven and cool for at least 10 minutes before serving to allow time for lasagna to set. Store in refrigerator in a covered dish for 2-3 days. After that it will still taste delicious but zucchini will get softer.'
+        ],
+      },
+    ],
+    [SOURCE_NAME]: 'nutritionicity',
+    [SOURCE_LINK]: 'https://www.nutritionicity.com/recipes/vegan-zucchini-lasagna/'
+  },
+  {
+    [TITLE]: 'Walnut Chip Brownies',
+    [IMAGE]: 'brownies',
+    [INGREDIENT]: [ 'apple', 'dates', 'banana', 'walnuts'],
+    [INGREDIENT_FULL]: [
+      '1/2 cup unsweetened applesauce or finely grated apple',
+      '8 pitted medjool dates',
+      '1 medium ripe banana',
+      '1/2 cup pure maple syrup',
+      '1 tsp vanilla extract',
+      '1/2 cup brown teff flour',
+      '1/2 cup almond meal (I ground almonds in my food processor)',
+      '1/2 cup cocoa powder',
+      '2 tsp baking powder',
+      '1/2 tsp baking soda',
+      '1/4 tsp kosher salt',
+      '1/3 cup chopped walnuts (my addition)',
+      '1/4 cup dark chocolate chips (my addition)',
+    ],
+    [INTRODUCTION]: [
+      'Lightly Adapted from Clean Start cookbook. Recipe printed with permission from Terry Walters. Copyright 2010, Sterling Publishing Co., Inc.'
+    ],
+    [DESCRIPTION]: [
+      {
+        [TITLE]: '',
+        [INTRODUCTION]: [],
+        [STEPS]: [
+          'Preheat oven to 350F and line an 8” x 8” pan with parchment paper so it overlaps on two sides. Lightly grease the parchment and sides of the pan with oil.',
+          'In a food processor, process the almonds into a flour like consistency. Remove ground almonds and set aside. In the food processor, process the applesauce, dates, banana, maple syrup, and vanilla until almost smooth.',
+          'In a medium sized bowl, whisk together the teff flour, almond meal, cocoa powder, baking powder, baking soda, and salt.',
+          'Add wet ingredients to dry and mix until just combined. Fold in the nuts and chips. Be careful not to overmix the batter.',
+          'Spoon batter into prepared pan and gently smooth out with a wet spatula. Batter will be very sticky! This is normal.',
+          'Bake for about 25-27 mins (I baked for 27 mins). at 350F or until a toothpick comes out clean. Let brownies cool completely for at least 1 hour before slicing as they are VERY delicate and fall apart. I suggest cooling and then freezing the brownies until firm, so you can slice them easier without them falling apart. Keep in a sealed container for up to 3 days.',
+        ],
+      },
+    ],
+    [SOURCE_NAME]: 'ohsheglows',
+    [SOURCE_LINK]: 'http://ohsheglows.com/2011/06/19/gluten-free-vegan-and-oil-free-walnut-chip-brownies/'
+  },
+  {
+    [TITLE]: 'Sholeh Zard',
+    [IMAGE]: 'sholezard',
+    [INGREDIENT]: [ 'rice', 'sugar', 'saffron', 'rosewater'],
+    [INGREDIENT_FULL]: [
+      '1 Cup  white rice',
+      '2 Cups  white sugar',
+      '1/4 Cups  butter',
+      '2 Teaspoons  ground saffron',
+      '3 Cups  water',
+      '1/4 Cups  slivered almonds',
+      '1/2 Cups  rosewater',
+      '1 Teaspoon  ground cardamom',
+      '2 Teaspoons  ground cinnamon',
+    ],
+    [INTRODUCTION]: [
+      'The history of this beautiful traditional dessert goes back to several hundred years ago, when it was served only on special occasions like the Persian new year. Nowadays it´s a more common food in Iran, but still people tend to make it on special events and share it with friends or family. It might sound strange but in Iran it’s very common that some neighbor, that you may hardly know knocks on your door and gives you a big bowl of this delicious dessert. for free! This kind of free foods are called “Nazri“.',
+    ],
+    [DESCRIPTION]: [
+      {
+        [TITLE]: '',
+        [INTRODUCTION]: [],
+        [STEPS]: [
+          'Rinse the rice with cool water, put the rice and 2 cups of water in a bowl, soak it overnight.',
+          'Drain the soaked rice, place in a large pot, add 3 cups of water, bring to a boil over medium heat, then reduce the heat and cook over low heat until rice is soft, stirring occasionally. Add more water if needed.',
+          'Add sugar to the pot and stir until it is completely dissolved and make sure to stir the rice every so often so that it does not stick to the bottom of the pot.',
+          'Add 5 tablespoons of hot water to the ground saffron. Let it brew while the rice cooks.',
+          'Add butter, ground cardamom, rosewater and saffron to the rice.',
+          'Continue cooking the pudding on the stove top on low heat until it is dense. Five minutes before serving it add silvered almonds.',
+          'Place it in small bowls. Garnish with cinnamon and slivered almond or pistachio. Let cool before serving.',
+        ],
+      },
+    ],
+    [SOURCE_NAME]: 'thepersianpot',
+    [SOURCE_LINK]: 'http://www.thepersianpot.com/recipe/shole-zard-saffron-rice-pudding/'
   },
 ]

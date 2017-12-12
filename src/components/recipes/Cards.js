@@ -9,6 +9,9 @@ import Paella from './resourses/paella.jpeg'
 import TofuKorma from './resourses/tofuKorma.jpg'
 import Tofupad from './resourses/tofupad.jpg'
 import Gnocchi from './resourses/gnocchi.jpg'
+import Felafel from './resourses/felafel.jpg'
+import Lasagna from './resourses/lasagna.jpg'
+import Brownies from './resourses/brownies.jpg'
 import Card from './Card'
 
 import {
@@ -28,9 +31,7 @@ export default class Cards extends Component {
     this.onCloseRecipe = this.onCloseRecipe.bind(this)
   }
   onClickRecipe (recipe, image) {
-    console.log('onClick init')
     return () => {
-      console.log('onClick called')
       this.setState({
         showRecipe: true,
         selectedRecipe: recipe,
@@ -64,13 +65,18 @@ export default class Cards extends Component {
         return Tofupad
       case 'gnocchi':
         return Gnocchi
+      case 'felafel':
+        return Felafel
+      case 'lasagna':
+        return Lasagna
+      case 'brownies':
+        return Brownies
     }
   }
 
   render () {
     const { showRecipe, image, selectedRecipe } = this.state
     const { visible } = this.props
-    console.log('showRecipe: ', showRecipe)
     return (
       <div className={`cards${visible ? ' visible' : ''}`}>
         <div className='cardsTitle'>
