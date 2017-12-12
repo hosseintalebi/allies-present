@@ -107,7 +107,6 @@
   z-index: 0;
   background: rgba(16,16,16,0.9);
   opacity: 0;
-  overflow: hidden;
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
@@ -162,9 +161,8 @@
 }
 
 .recipe .container {
-  margin: 20px;
+  margin: 10px;
   background: #fff;
-  overflow-y: auto;
 }
 
 .recipe .title1 {

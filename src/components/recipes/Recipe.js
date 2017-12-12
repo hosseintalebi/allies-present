@@ -157,7 +157,7 @@ export default class Card extends Component {
         className={`closeArea recipe${visible ? ' visible' : ''}`}
         onClick={onClose}>
         {this.renderCloseBtn()}
-        <div className='container' style={{width: sm ? '100%' : '85%', marginBottom: sm ? 0 : 20}}>
+        <div className='container' style={{width: sm ? '100%' : '85%'}}>
           {this.renderImage()}
           {this.renderRecipe()}
           {this.renderSource()}
