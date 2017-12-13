@@ -50,7 +50,7 @@ class App extends Component {
   openPresent (event) {
     event.preventDefault()
     const { secretCodeInput } = this.state
-    if (_.toLower(secretCodeInput) === SECRET_CODE) {
+    if (_.toLower(secretCodeInput) === _.toLower(SECRET_CODE)) {
       this.setState({openPresent: true, wrongSecret: false})
     } else {
       this.setState({wrongSecret: true})
