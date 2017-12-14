@@ -16,10 +16,12 @@ import Cards from './components/recipes/Cards'
 import './App.css';
 
 const SECRET_CODE = 'Whereismypresent'
+const COOKIE_NAME = 'firstTime'
 
 class App extends Component {
   constructor () {
     super()
+    const firstTime = this.checkFirstTime()
     this.state = {
       secretCodeInput: '',
       openPresent: false,
@@ -27,15 +29,39 @@ class App extends Component {
       showContent: false,
       initialScreenOff: false,
       showRecipes: false,
+      showSkip: firstTime !== '' ? true : false,
+    }
+    if (firstTime === '') {
+      this.setCookie(10000)
     }
     this.onChangeSecretCode = this.onChangeSecretCode.bind(this)
     this.openPresent = this.openPresent.bind(this)
     this.onShowRecipes = this.onShowRecipes.bind(this)
     this.onSkipInto = this.onSkipInto.bind(this)
+
   }
   componentDidMount () {
     setTimeout(() => this.setState({initialScreenOff: true}), 5000)
     setTimeout(() => this.setState({showContent: true}), 7000)
+  }
+  checkFirstTime () {
+    let cookieValue = ''
+    const values = document.cookie.split(';')
+    _.each(values, (value) => {
+      while(value.charAt(0) === ' ') {
+        value = value.substring(1)
+      }
+      if (value.indexOf(COOKIE_NAME) === 0) {
+        cookieValue = value.substring(COOKIE_NAME.length, value.length)
+      }
+    })
+    return cookieValue
+  }
+  setCookie (exdays) {
+    const d = new Date()
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000))
+    const expires = 'expires=' + d.toUTCString()
+    document.cookie = COOKIE_NAME + '=' + 'No' + ';' + expires + ";path=/"
   }
   onChangeSecretCode ({target}) {
     this.setState({
@@ -72,12 +98,13 @@ class App extends Component {
       initialScreenOff,
       showContent,
       showRecipes,
+      showSkip
     } = this.state
     return (
       <div style={{height: '100vh', overflow: 'hidden'}} className='App'>
         <InitialScreen
           onSkipInto={this.onSkipInto}
-          shouldRenderSkip={!openPresent}
+          shouldRenderSkip={!openPresent && showSkip}
           shouldMoveBottomRight={initialScreenOff}
         />
         <div className={`blueScreen${initialScreenOff ? ' visible' : ''}`}>
